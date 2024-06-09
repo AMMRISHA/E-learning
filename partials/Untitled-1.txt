@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="hossianInterior" />
+   <meta name="application-name" content="hossianinterior.com" />
+   <meta property="og:title" content="hossianinterior.com" />
+   <!-- set the hosting image path -->
+   <meta property="og:image" content="//////////////////////////////////////" /> 
+   <!-- <meta http-equiv="refresh" content="30"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+   
+   <meta name="og:url" property="og:url" content="https://www.hossianinterior.com/" />
+  
+   <meta name="og:title" property="og:title" content="hossianInterior: Full Home Interior Design Solutions, Get Instant Quotes." />
+   
+   <title>HossianInteiror:Full Home Solutions|We deign your dream space |Best Interior Solutions |Best Bedroom Designs| Best kitchen Designs| Best Pricing|</title>
+   
+   <link rel="icon" href="logo/h-2.1.png"  type="image/icon type">
+   
+   <meta name="og:type" property="og:type" content="website" />
+   
+   <meta name="google-site-verification" content="HGNEjGs1fcMSSEE-Rdj81pvMLY5Z8F7XcfmGLwBaJRI" />
+  
+   <meta name="og:description" property="og:description" content="Explore 1000&#x27;s of fully customizable home interior designs. Get the interiors of your home designed by our experts at. Book a 
+   free consultation today." />
+
+   <meta name="description" content="Explore 1000&#x27;s of fully customizable home interior designs. Get the interiors of your home designed by our experts at hossianInterior. Book a free consultation today." />
+   
+   <meta name="next-head-count" content="15" />
+   
+   <meta name="keyword" content="End-to-end Interior Solutions With reasonable
+   Prices . modular kitchens, interior design, interior design ideas, kitchen designs, kitchen interiors, kitchen interior, kitchen cabinet designs, kitchen cabinets, kitchen ideas, 
+   modular furniture, modular kitchen india, italian kitchens, german kitchens, wooden kitchens, plywood modular kitchens, mdf modular kitchens, acrylic kitchens, modular kitchens for apartment, 
+   modular kitchens for flats, modular kitchen dealers, modular kitchen store, modular kitchen for Villa, kitchen cabinets for apartments, kitchen cabinets for flatsThis is the great solutions for Superior Quality material and we are 
+   budget friendly too . We also provide all maintenance support .India's Most Trusted Home Interior Company. It is best at renovtion and and New Built homes.Best Solutions for Modular Kitchen , Living
+   Space,interior,bedroom interior,luxury bedroom interior,luxurious bedrooms for girls,best bedroom in the world,best interior design,best interior design in bangalore,best interior design in kolkata,best interior design company in kolkata,
+   best interior design company for pricing,best bedroom design,Modular kitchen designs,best kitchen designs,best space saving interior design,best space saving interior design as 
+   compare to price,wardrobe designs,best bedroom and wardrobe designs for kids,trustable interior designer ,affordable pricing interior designer , kitchen , wardrobe solutions idea,
+   interior design wardrobes for bedrooms,wardrobe inside design for bedroom,wardrobe latest design, All Interior solutions with best affordable prices, Wooden interior design and 
+   idea with solutions, Best Bathroom Designs, Best Bedroom Designs , Best wardrobe Design,Crockery Unit,Shopping mall Designs,Kitchen Unit,Study Table,TV Unit,wallpapers,
+   Wall paintings,Lightings,False Ceiling Designs, Space Saving Furniture, interior designer near me,safety virtual meeting"/>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="website.js"></script>
+    
+   <link rel="stylesheet" href="Owl Carousal/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="Owl Carousal/css/owl.theme.default.min.css">
+ <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans" /> -->
+ <script src="Owl Carousal/js/jquery.min.js"></script>
+ <script src="Owl Carousal/js/owl.carousel.min.js"></script>
+
+   <title>Document</title>
+</head>
+<body>
+   
+<!-- header section starts -->
+
+<div id="navbar">
+       
+        
+   <div class="logo">
+   <a href="https://www.hossianinterior.com/"> <img src="logo/h-2.png" alt="logo"></a>  
+   </div>
+      <ul class="h-nav-resp">
+         <li class="item"><a class="nav-a" href="#">Home Gallery</a></li>
+         <li class="item"><a href="Bedroom.html" target= "blank" class="nav-a">Bedroom</a></li>
+         <li class="item"><a href="kitchen.html" target= "blank" class="nav-a">Kitchen</a></li>
+         <li class="item"><a href="living area.html" target= "blank" class="nav-a">Living Room</a></li>
+          <li class="item"><a href="Space saving furniture.html" target= "blank" class="nav-a">Space Savings Furniture</a></li>
+          <li class="item"><a href="wardrobe.html" target= "blank" class="nav-a">Wardrobe</a></li>
+          
+         <li class="item"><a class="num" href="tel:+91 8016641861">+91 8016641861</a></li>
+        </ul>
+     <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+     </div>
+</div>
+<div class="home">
+        
+    <div class="content">
+            <div class="title">
+                        Make Your Home
+                        <div class="slider">
+                           <div>Comfortable</div>
+                           <div>Attractive</div>
+                           <div>Relaxible</div>
+                        </div>
+            </div>
+             <h1 style="font-size: 23px;">The Best Interior Designers & Decorations within Your Budget .</h1> 
+             <h1  style="font-size: 25px;">Guaranteed</h1>
+             <a href="tel:+91 8016641861" class="a-h-btn"> <button class="h-btn " type="button" style="border: 1px solid #fff; color:#fff;">Make a Call Now </button></a>
+     </div>
+   
+
+</div> 
+<!-- header section ends-->
+
+
+<!-- product view starts -->
+
+
+<h class="h2-primary">Bedrooms Design</h>  
+ 
+</body>
+</html>

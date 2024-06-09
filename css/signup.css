@@ -1,0 +1,74 @@
+.signupContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputbox{
+    width: 50%;
+    height: 500px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputbox input{
+    padding: 10px 90px;
+   
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+    color: gray;
+    
+}
+.signupTxt{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.btn-signup{ 
+    padding: 10px 35px;
+    margin: 17px 0px ;
+    /* background: linear-gradient(to left, #0099ff 0%, #ff33cc 100%); */
+    background: linear-gradient(to top left, #cc66ff 0%, #00ffff 100%);
+    border-radius: 18px;
+    border: none;
+    /* font-weight: bold; */
+    color: whitesmoke;
+
+}
+.btn-signup:hover{
+    filter: blur(1px);
+    border: 1px solid cyan;
+    /* color: black; */
+    outline: none;
+
+
+}
+
+
+/* ???????icnons section  */
+.icon-box{
+    margin: 20px 0px ;
+    
+    width: 200px;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.icon-box:hover{
+    cursor: pointer;
+}
+.endTxt{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

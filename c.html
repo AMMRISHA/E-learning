@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="materialstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Tutorial</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>C Programming Tutorial</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#basics">Datat type</a>
+        <a href="#Conditional">Conditional Statements</a>
+        <a href="#Iteration">Iteration Statements</a>
+        <a href="#Arrays">Arrayss</a>
+        <a href="#Strings">Strings</a>
+        <a href="#Functions"> Functions</a>
+        <a href="#Pointers"> Pointers</a>
+        <a href="# Memory"> Memory Management</a>
+        <a href="#Structures"> Structures & Unions</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <section id="introduction">
+        <h1>Introduction to C Programming</h1>
+        <p>
+        <h3>What is C?⁣</h3>
+        <ul>
+            <li>Since the late 19th century,C has been a popular programming language for general-purpose use.</li>
+            <li>C language was developed by Dennis M. Ritchie at bell laboratory in early 1970s</li>
+            <li>Its applications are very diverse. It ranges from developing operating systems to databases and all.⁣
+                <br>It is system programming language used to do low level programming (e.g., driver or kernel)
+            </li>
+            <li>Even if it’s old, it is still a very popular programming language.⁣</li>
+            <li>As the whole UNIX operating system was written in C, it has a strong association with the operating
+                system⁣</li>
+            <li>C has also been used widely while creating iOS and Android kernels.⁣</li>
+            <li>MySQL database is written using C.⁣</l>
+        </ul>
+        </p>
+        </p>
+        <p>he “Hello World” program is the first
+            step towards learning any programming
+            language and also one of the simplest
+            programs you will learn. All you have
+            to do is display the message “Hello World”
+            on the screen.
+            <br><br>Let us now look at the program :<br>
+        </p>
+        <code class="code">
+        #include<stdio.h> 
+        <br> 
+        int main() 
+        <br>
+            { 
+                <br>
+                printf("Hello World"); 
+                <br>
+                return 0; 
+                <br>
+            } 
+    </code>
+        <br>
+        <p>
+        <h3>Why should we learn C/ Features of C?</h3>
+        <ul>
+            <li>As mentioned above, it is one of the most popular programming languages in the world.</li>
+            <li>Learning any other popular programming language such as Python or C++ becomes a cakewalk already if you
+                know C.</li>
+            <li>C is a flexible language and that gets proven by the fact that it can be used in a variety of
+                applications as well as technologies.</li>
+            <li>It is procedural programming language (POP) Procedurall Programming is the use of code in a step-wise
+                procedure to develop applications. </li>
+            <li>It is a structural language (Follows a specific Structure) /Compiled language this point should be added
+            </li>
+        </ul>
+        </p>
+
+    </section>
+
+    <section id="basics">
+        <h2>C Data Types, Operators & User I/O</h2>
+        <p>As explained previously, a variable in C must be a specified data type, and you must use a format specifier
+            inside the printf function to display the value present in the variable
+            The data type specifies the size and type of information the variable will store.</p>
+        <p>
+        <h3>Basic Types</h3>
+        They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.
+        </p>
+        <p>
+        <h3>Enumerated types</h3>
+        They are again arithmetic types and they are used to define variables that can only assign certain discrete
+        integer values throughout the program.
+        </p>
+        <p>
+        <h3>The type void</h3>
+        The type specifier void indicates that no value is available.
+        </p>
+        <p>
+        <h3>Derived types</h3>
+        They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) <br> Function
+        types.
+        </p>
+        <p>
+        <h3>C Constants</h3>
+        When you don't want the variables you declare to get modified intentionally or mistakenly in the <br>later part
+        of
+        your program by you or others, you use the const keyword (this will declare the variable as "constant",<br>
+        which
+        means unchangeable and read-only).
+        You should always declare the variable as constant when you have values that are unlikely to change,<br> like
+        any
+        mathematical constant as PI.
+        When you declare a constant variable, it must be assigned a value.
+        </p>
+
+        <p>The array types and structure types are referred collectively as the aggregate types. The type of a <br>
+            function
+            specifies
+            the type of the function's return value. We will see the basic types in the following section, where <br> as
+            other types will be covered in the upcoming chapters.</p>
+    </section>
+
+    <section id="Conditional">
+        <h2>Conditional Statements</h2>
+        <p>
+        <h3> IF...Else statements</h3>Sometimes, we wish to execute one set of instructions if a particular
+        condition
+        is met, and another set of instructions if it is not.
+        This kind of situation is dealt with in C language using a decision control system.
+
+        The condition for the if statement is always enclosed within a pair of parentheses.
+        If the condition is true, then the set of statements following the if statement will execute.
+        And if the condition evaluates to false, then the statement will not execute, instead, the program skips
+        that
+        enclosed part of the code.
+        An expression in if statements are defined using relational operators. Comparing two values using relational
+        operators allows us to determine
+        whether they are equal, unequal, greater than, or less than.
+        If we want to execute a particular code in some situation and its vice versa /opposite/or different code if that
+        situation doesn’t occurs then if..else statements can be used.
+        Its all depend on the condition. If the condition returns true value the situation has occurred and the
+        true part of
+        code will be executed and if condition returns false value false part of the code will be executed</p>
+        <h4> Syntax of if-else statements:</h4>
+        <code>if ( condition ){<br>
+            statements;}<br>
+             else {<br>
+            statements;} <br>
+            </code>
+        <p>
+        <h3>Switch Case Statements</h3>
+        <h4>What is Switch?</h4>The control statement that allows us to make a decision effectively from the number
+        of
+        choices is called a switch, or a switch case-default since these three keywords go together to make up the
+        control statement. The expression in switch returns an integral value, which is then compared with different
+        cases. Switch executes that block of code, which matches the case value. If the value does not match with
+        any of
+        the cases, then the default block is executed.
+        <h4> Syntax of Switch statements:</h4>
+        <code>switch ( integer expression ) 
+        {  <br>
+        case {value 1} : <br>  
+        do this ; <br>
+         
+        case {value 2} : <br>  
+         do this ;  <br>
+        case {value 3} : <br>  
+        do this ; <br> 
+         
+        default : <br>  
+        do this ; <br>
+         } 
+        </code></p>
+
+    </section>
+    <section id="Iteration">
+        <h2>Iteration Statements</h2>
+        <p>
+        <h3>C Loops</h3>In programming, we often have to perform an action, again and again, with little or no
+        variations in the details each time they are executed. This need is met by a mechanism known as a loop.
+
+        The versatility of the computer lies in its ability to perform the set of instructions repeatedly. This involves
+        repeating some code in the program, either a specified number of times or until a particular condition is
+        satisfied. Loop-controlled instructions are used to perform this repetitive operation efficiently ensuring the
+        program doesn’t look redundant at the same time due to the repetitions.
+        <h4>Following are the three types of loops in C programming.</h4>
+        <ul>
+            <li>For loop</li>
+            <li>While loop</li>
+            <li>do-while loop</li>
+        </ul>
+        </p>
+        <h3>For Loop</h3>
+        <p>A for loop is a repetition control structure that allows us to efficiently write a loop that will execute a
+            specific number of times. The for loop working is as follows:
+        <ul>
+            <li>The initialization statement is executed only once; in this statement, we initialize a variable to some
+                value.</li>
+            <li>The initialization statement is executed only once; in this statement, we initialize a variable to some
+                value.</li>
+            <li>The loop keeps executing until the test expression is false. When the test expression is false, then the
+                loop terminates. </li>
+        </ul>
+        <h4> Syntax of For Loop:</h4>
+        <code>for (initialise counter; test counter; increment / decrement counter) <br>
+    { <br>
+        //set of statements
+    } <br>
+    </code></p>
+        </p>
+        <h3>While Loop</h3>While loop is called a pre-tested loop. The while loop allows code to be executed multiple
+        times, depending upon a boolean condition that is given as a test expression. While introducing for loops, we
+        saw that the number of iterations is known, whereas while loops are used in situations where we do not know the
+        exact number of iterations of the loop. The while loop execution is terminated based on the test condition which
+        evaluates to either true or false.
+        <h4> Syntax of While Loop:</h4>
+        <code>while (condition test) <br>
+            { <br>
+                // Set of statements <br>
+            }
+            
+    </code></p>
+        </p>
+        <h3> Do-While Loop</h3>In do-while loops, the execution is terminated based on the test condition, very similar
+        to how it is done in a while loop. The main difference between the do-while loop and while loop is that, in the
+        do-while loop, the condition is tested at the end of the loop body, whereas the other two loops are
+        entry-controlled. In a do-while loop, the loop body will execute at least once irrespective of the test
+        condition <br>
+        Sometimes, while executing a loop, it becomes necessary to jump out of the loop. For this, we make use of the
+        break statement and the continue statement
+        <h4> Syntax of Do-While Loop:</h4>
+        <code>do <br>
+            {
+                statements; <br>
+            } while (test condition); <br>            
+</code></p>
+    </section>
+    <section id="Arrays">
+        <h2>Arrays</h2>
+        <p>
+        <h3>Array Basics</h3>
+        An array is a collection of data items of the same data type. And it is also known as a subscript variable.
+        <ul>
+            <li>Items are stored at contiguous memory locations in arrays.</li>
+            <li>It can also store the collection of derived data types such as pointers, structures, etc.</li>
+            <li>The C Language places no limits on the number of dimensions in an array. This means we can create arrays
+                of any number of dimensions. It could be a 2D array or a 3D array or more.</li>
+        </ul>
+        <h3> Dimensions of an array</h3>
+        <ul>
+            <li>A one-dimensional array is like a list.</li>
+            <li>A two-dimensional array is like a table.</li>
+        </ul>
+        Some texts refer to one-dimensional arrays as vectors and two-dimensional arrays as matrices and use the general
+        term arrays when the number of dimensions is unspecified or unimportant.
+        <h3>Properties of Arrays</h3>
+        <ul>
+            <li>An array stores data be it of any data type in contiguous memory locations in RAM.</li>
+            <li>Each element of an array is of the same size i.e. their data types are the same so the memory consumed
+                by each is also the same.</li>
+            <li>Any element of the array with a given index can be accessed very quickly by using its address which can
+                be calculated using the base address and the index number.</li>
+            <li>Index Number – It is the special type of number which allows us to access variables of arrays. Index
+                number provides a method to access each element of an array in a program.</li>
+        </ul>
+        <h4>Defining an Array</h4>
+        <h5>1. Without specifying the size of the array</h5>
+        <code> int arr[]={1,2,3};</code>
+        <h5>1. With specifying the size of the array</h5>
+        <code> int arr[3] <br>
+    arr[0]=1,arr[1]=2,arr[2]=3;
+
+</code>
+        </p>
+    </section>
+    <section id="Strings">
+        <h2>Strings</h2>
+        <p>
+        <h3>What are Strings?</h3>
+        A string is an array of characters. Data of the same type are stored in an array, for example, integers can be
+        stored in an integer array, similarly, a group of characters can be stored in a character array. This character
+        array is also known as strings. A string is a one-dimensional array of characters that is terminated by a null
+        (‘\0’).
+        <h2>Declaration of Strings:</h2>
+        Declaring a string is very simple, the same as declaring a one-dimensional array. It’s just that we are
+        considering it as an array of characters.
+        <h4> Below is the syntax for declaring a string.</h4>
+        <code>char string_name[string_size]; <br> <br></code>
+        In the above syntax, string_name is any name given to the string variable, and size is used to define the length
+        of the string, i.e the number of characters that the strings will store. Keep in mind that there is an extra
+        terminating character which is the null character (‘\0’) that is used to indicate the termination of the string.
+        </p>
+    </section>
+    <section id="Function">
+        <h2> Functions</h2>
+        <p>
+            Functions are used to divide a large C program into smaller and less complex pieces.
+            Function can be called multiple or several times to provide reusability and modularity to the C program.
+            Functions are also called procedures or subroutines or methods.
+            A function is also a piece of code that performs a specific task.
+            A function is nothing but a group of code put together and given a name and it can be called anytime without
+            writing the whole code again and again in a program.
+            I know its syntax is a bit difficult to understand but don’t worry after reading this whole information
+            about Functions you will know each and every term or thing related to Functions.
+            <code> <br>
+                #include [stdio.h] <br> 
+                    // Function declaration <br>
+                    void func(); <br>
+                    int main() <br>
+                    { <br>
+                        func(); // calling the function 
+                        return 0; <br>
+                    } <br>
+                    // Function definition <br>
+                    void func() <br>
+                    {
+                        printf("This is the definition part."); <br>
+                    }
+            </code>
+        </p>
+    </section>
+    <section id="Pointer">
+        <h2> Pointers</h2>
+        When we initialise an array, we usually come to know about the,
+        <p>
+        <ul>
+            <li>Memory block which is the space a variable gets in RAM. We can think of that space as a block.</li>
+            <li>Name of the memory block which is the variable’s name itself.</li>
+            <li>Content of that block that is the value stored in that variable</li>
+            <li>Address of the memory block assigned to the variable which is a unique address that allows us to access
+                that variable.</li>
+        </ul>
+        <h3>What is a Pointer?</h3>
+        <ul>
+            <li>Pointer is a variable that contains the address of another variable. It means, it is a variable that
+                points to any other variable.</li>
+            <li>Although this is itself a variable, this contains the address or memory address of any other variable.
+            </li>
+            <li>It can be of type int, char, array, function, or even any other pointer.</li>
+            <li>It can be of type int, char, array, function, or even any other pointer.</li>
+            <li>Pointers in C Language can be declared using *(asterisk symbol).
+                So, pointers are nothing but variables that store addresses of other variables, and by using pointers,
+                we can access other variables too and can even manipulate them</li>
+        </ul>
+        <h3>Applications of Pointers</h3>
+        <ul>
+            <li>Pointers are used to dynamically allocate or deallocate memory using methods such as malloc(),
+                realloc(), calloc(), and free().</li>
+            <li>Pointers are used to point to several containers such as arrays, or structs, and also for passing
+                addresses of containers to functions.</li>
+            <li>Return multiple values from a function </li>
+            <li>Rather than passing a copy of a container to a function, we can simply pass its pointer. This helps
+                reduce the memory usage of the program.</li>
+        </ul>
+        <h4>Here’s one example to demonstrate the use of the address of the operator.</h4>
+        <code> <br>
+            #include <stdio.h> <br>
+            int main() <br>
+            {
+                int a = 100; <br>
+                printf("%d\n", a); <br>
+                printf("Address of variable a is %d", &a); <br>
+                return 0; <br>
+            }
+            </code>
+        </p>
+    </section>
+    <section id="Memory">
+        <h2> Memory Management</h2>
+        <p>
+        <h3>Local Variables</h3>Local variables are variables that are declared inside a function or a block of code.
+        These variables cannot be accessed outside the function they are declared in. Local variables can be accessed
+        only by statements that are inside that function or block of code which means the scope of these variables will
+        be within the function only.</p>
+        <p>
+        <h3>Global Variables</h3>Global variables are variables that are defined outside of all the functions. Global
+        variables hold their values, and we can access them inside any of the functions defined in the program. When we
+        define global variables, the system automatically initializes them.
+
+        If cases where we have both the local and global variables with the same name declared, the local variable takes
+        preference.</p>
+        <p>
+        <h3>Static Variables</h3>A static variable is a variable that retains its value even after the program exits the
+        scope it was declared in. Static variables retain their value and are not initialized again in the new scope.
+        The memory assigned to a static variable stays until the end of the program is reached, whereas a normal
+        variable is destroyed when a function it was declared in gets exited. They can be defined inside or outside the
+        function. Static variables are local to the block. The default value of a static variable is zero. The keyword
+        static is used to declare a static variable.
+        <h4>Syntax:</h4>static datatype variable_name = variable_value;</p>
+        <p>
+        <h3>Memory Allocation</h3>
+        <h4> malloc():</h4> malloc stands for memory allocation. This inbuilt function requests memory from the heap and
+        returns a pointer to the memory. The pointer is of the void type and we can typecast it to any other data type
+        of our choice.
+        All the values at the allocation time are initialized to garbage values. The function expects the memory space
+        along with the size we want in bytes at the time it is used.
+        <h5>Syntax:</h5> ptr = (ptr - type *)malloc(size_in_bytes) <br>
+        <h4> calloc():</h4> calloc stands for contiguous memory allocation. Similar to malloc, this function also
+        requests memory from the heap and returns a pointer to the memory. Differences lie in the way we have to call
+        it.
+        First, we have to send as parameters the number of blocks needed along with their size in bytes. Second, in
+        calloc(), the values at the allocation time are initialized to 0 instead of garbage value unlike what happens in
+        malloc().
+        <h5>Syntax:</h5> ptr = (ptr - type *)calloc(n, size_in_bytes) <br></p>
+        <h4>realloc():</h4> realloc stands for reallocation of memory. It is used in cases where the dynamic memory
+        allocated previously is insufficient and there is a need of increasing the already allocated memory to store
+        more data
+        We also pass the previously declared memory address, and the new size of the memory in bytes while calling the
+        function.
+        <h5>Syntax:</h5>ptr = (ptr - type *)realloc(ptr, new_size_in_bytes) <br></p>
+        <h4>Free():</h4> While discussing the disadvantages of dynamic memory allocation, it was mentioned that there is
+        no automatic deletion of dynamically allocated memory when the pointer gets overwritten. So, to manually do it,
+        we use the free() function to free up the allocated memory space. Therefore, free() is used to free up the space
+        occupied by the allocated memory.
+        We just have to pass the pointer as a parameter inside the function and the address being pointed gets freed
+        <h5>Syntax:</h5>free(ptr);<br></p>
+        </p>
+    </section>
+    <section id="Structure">
+        <h2>Structures & Unions</h2>
+        <p>
+        <h3>Structures</h3>
+        <p>We have already learnt in the previous tutorials that variables store one piece of information and arrays of
+            certain data types store the information of the same data type. Variables and arrays can handle a great
+            variety of situations. But quite often, we have to deal with the collection of dissimilar data types. For
+            dealing with cases where there is a requirement to store dissimilar data types, C provides a data type
+            called ‘structure’. It is a way to group together information belonging to different data types and combine
+            them into one structure.</p>
+        <h4>What are Structures in C?</h4>
+        Structures are usually used when we wish to store data of different data types together. For example, if we want
+        to store information about a book, there could be a number of parameters defining a book.
+        Books have a title, an author name, the number of pages, and a price. All of the book attributes belong to
+        different data types. The titles and author names must be strings, but the prices and number of pages must be
+        numerical.
+        One way to store the data is to construct individual arrays, and another method is to use a structure variable.
+        It is to keep in mind that structure elements are always stored in contiguous memory locations.
+        <h4>Creating a struct element</h4>
+        <code><br>
+            #include <stdio.h> <br>
+            struct Books <br>
+            {
+                char title[20]; <br>
+                char author[100]; <br>
+                float price; <br>
+                int pages; <br>
+            }; <br>
+            int main() <br>
+            {
+                struct Books book1; <br>
+                return 0; <br>
+            }</code>
+        <h3>Unions</h3>
+        Just like Structures, the union is a user-defined data type. All the members in unions share the same memory
+        location. The union is a data type that allows different data belonging to different data types to be stored in
+        the same memory locations. One of the advantages of using a union is that it provides an efficient way of
+        reusing the memory location, as only one of its members can be accessed at a time. A union is used in the same
+        way we declare and use a structure. The difference lies just in the way memory is allocated to their members
+       <h4>Defining a Union</h4>
+    <code>
+        #include [stdio.h] <br>
+            union Books <br>
+            {
+                char title[20]; <br>
+                char author[100]; <br>
+                float price; <br>
+                int pages; <br>
+            };   <br> 
+            int main() <br>
+            {
+                union Books book1; <br>
+                return 0; <br>
+            }
+            
+    </code> </p>
+
+    <!-- Add more sections with content -->
+
+    <footer>
+        <p>&copy; 2024 C Programming Tutorial</p>
+    </footer>
+</body>
+
+</html>
