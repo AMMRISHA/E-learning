@@ -10,14 +10,14 @@
     /* box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2), 0px 4px 16px 0 rgba(0,0,0,0.2); */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     top: 0px;
     position: sticky;
     z-index: 5;
     overflow: hidden;
     height: 75px;
-    /* border: 2px solid blue; */
-    background-color:rgba(245,245,245,0.5);
+    /* border: 2px solid blue; */;
     box-shadow: 0px 0px 20px rgb(136, 136, 233);
     
     }
@@ -264,7 +264,7 @@ display:none;
  .homebanner{
     padding: 30px 30px;
      width: 100%;
-     height: 700px;
+     max-height: 700px;
      /* background-image: url(../homebanner.png); */
      background-color: whitesmoke;
      /* background-image:url(../banner1.png); */
@@ -279,7 +279,8 @@ display:none;
 }
 .rightside_container{
     width: 50%;
-    height: 650px;
+   max-height: 650px;
+   height: auto;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -289,7 +290,8 @@ display:none;
 
 .leftside_container{
     width: 50%;
-    height: 650px;
+    max-height: 650px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,8 +388,9 @@ h1:hover{
     width: 100%;
     height: 450px;
     background-color: rgb(199, 166, 231);
-    border-radius: 40% 40% 40% 40%;
+    border-radius:20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px rgb(224, 188, 224);
@@ -426,7 +429,8 @@ h1:hover{
   }
   
 .highlightSection .card_box{
-    width: 80%;
+    flex-wrap: wrap;
+    width: 98%;
     height: 280px;
     /* border: 2px solid red; */
     background: none;
@@ -446,8 +450,12 @@ h1:hover{
     border: none;
     padding: 10px 20px;
 }
-.box  .card-box-img{
-    margin: 10px  43px;
+.box .card-box-img{
+    
+    margin: 10px 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box .box-txt{
     color: rgb(161, 159, 159);
@@ -515,8 +523,10 @@ h1:hover{
 .about-section{
 
     width: 100%;
-    height:400px;
+    max-height:400px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 80px 0px;
@@ -524,7 +534,8 @@ h1:hover{
 
 .about-content{
     width: 60%;
-    height: 350px;
+    max-height: 350px;
+    height: auto;
     border: 3px dotted rgb(239, 188, 188);
     padding: 20px 50px;
 }
@@ -560,7 +571,7 @@ h1:hover{
 
 .project_section{
     width: 100%;
-    height: 1000px;
+    min-height: 1000px;
     /* background-color: red; */
     /* border: 2px solid blue; */
     margin:100px 0px;
@@ -569,18 +580,21 @@ h1:hover{
 }
 .project_container{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     /* border: 2px solid red; */
 
 }
 .project_box{
-    width: 320px;
-    height: 350px;
+    width: 30%;
+    height: auto;
     background-color: rgb(228, 226, 226);
     border-radius: 15px;
+    margin: 10px;
 
 }
 .project_heading1{
@@ -601,8 +615,8 @@ h1:hover{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .project_imgbanner{
-    width: 320px;
-    height: 155px;
+    width:100%;
+    height: 250px;
     border-radius:10px ;
 }
 .text-box{
@@ -646,16 +660,22 @@ h1:hover{
 }
 .overview{
     width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .overview_txt{
     width: 40%;
     height: auto;
     padding: 20px 20px;
+}
+.overflow-btn-img{
+    display: flex;
+    flex-direction: column;
 }
 .overview_img{
     width: 350px;
@@ -672,7 +692,7 @@ h1:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .student{
-    padding: 40px 60px;
+    padding: 30px 50px;
     margin: 10px 10px;
     color: white;
     background-color: rgb(217, 164, 217);
@@ -694,8 +714,9 @@ h1:hover{
     height: 300px;
     background-color: rgb(217, 164, 217);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 .newsletterBox img{
     width: 300px;
@@ -708,6 +729,13 @@ h1:hover{
     height: auto;
     background: none;
 
+}
+.search-btn-box{
+    background: none;
+}
+.search_box a{
+    text-decoration: none;
+    background:none;
 }
 .search_box h1{
     color: white;
@@ -723,9 +751,11 @@ h1:hover{
     width: 70%;
     outline: none;
     border: none;
+    position: relative;
 
 }
 .search_box .newletterBtn{
+    position: absolute;
     padding: 20px 20px;
     border: none;
     color: white;
@@ -922,9 +952,11 @@ form{
 }
 .footer{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     background: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -966,7 +998,8 @@ form{
 }
 .end_section{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
     background: linear-gradient(to top, #cc66ff 0%, #cc99ff 100%);
     
 }
@@ -975,4 +1008,482 @@ form{
     background: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+
+
+
+
+
+/* media query for responsiveness */
+@media (max-width:1200px) {
+    .student{
+        padding: 22px 34px;
+    }
+    .overview_txt{
+        width: calc(100% - 350px) ;
+    }
+   
+}
+@media (max-width:1100px) {
+    #navbar .logo{
+        width: 150px;
+    }
+    .h-nav-resp {
+        width: calc(100% - 180px);
+        margin-left: 0px;
+        padding-left: 2px;
+    }
+    .item_li h3{
+        font-size: 10px;
+    }
+    .highlightSection .box{
+        width: 22%;
+        min-height: 270px;
+        height: auto;
+    }
+    .about_heading2 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 34px;
+    }
+    .aboutImg{
+        width: 35%;
+        max-height: 360px;
+        height: auto;
+    }
+    .project_box{
+        width: 25%;
+    }
+    .project_imgbanner {
+        height: 200px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .homebanner{
+        overflow: hidden;
+        max-height: 700px;
+        padding: 5px;
+    }
+    .leftside_container{
+        padding: 5px;
+    }
+    .leftside_container h3{
+        font-size: 23px;
+    }
+    .leftside_container h1{
+        font-size: 30px;
+    }
+    .leftside_container span{
+        font-size: 15px;
+    }
+    .leftside_container p{
+        font-size: 10px;
+    }
+    .Subscribebtn{
+        width: 33%;
+        font-size: 10px;
+    }
+    .banner_animate{
+        width: 100%;
+    }
+    .banner_animate img{
+        width: 100%;
+        height: auto;
+    }
+    .box h5{
+        text-align: left;
+    }
+    .box .box-txt{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .box .card-btn{
+    margin-top: 13px;
+    font-size: 10px;
+}
+.about-section{
+    margin: 24px 0px;
+}
+.newsletterBox{
+    width: 100%;
+}
+.search_box {
+    width: calc(100% - 300px);
+
+}
+
+}
+
+
+@media (max-width:900px) {
+    .highlightSection{
+        max-height: 800px;
+        height: auto;
+        animation: none;
+    }
+    .highlightSection .box {
+        width: 47%;
+        margin: 7px;
+    }
+    .highlightSection .card_box{
+        min-height: 280px;
+        height: auto;
+    }
+    .highlightSection .card_box{
+        width: 70%;
+    }
+    .project_box{
+        width: 41%;
+    }
+    .about-content{
+        padding: 12px 13px;
+    }
+    .about_heading2{
+        font-size: 25px;
+    }
+    .overview h3{
+        font-size: 30px;
+    }
+}
+@media (max-width:758px) {
+    .student {
+        padding: 15px 20px;
+        margin: 10px 3px;
+    }
+    .overview_img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width:750px) {
+    .item_li img{
+        width: 15px;
+        height: 15px;
+    }
+    #navbar .logo {
+        width: auto;
+    }
+
+    .logoTxt{
+        font-size: 15px;
+    }
+  
+    .about-content{
+        width: 50%;
+    }
+    .aboutImg {
+        width: 50%;
+    }
+    .about_heading2 {
+        font-size: 20px;
+    }
+    .about_para{
+        font-size: 12px;
+    }
+    .end_section{
+        margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .footerbox1 , .footerbox2 {
+        width: 50%;
+    }
+    .footerbox3{
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-height: 300px;
+        height: auto;
+    }
+
+    .search_box h2 ,.search_box h1{
+        font-size: 20px;
+    }
+    .search_box input {
+        padding: 10px 0px;
+        width: 65%;
+    }
+    .search_box .newletterBtn {
+        width: 60px;
+        padding: 10px 10px;
+
+    }
+}
+
+@media (max-width:700px) {
+    .highlightSection .card_box {
+        width: 95%;
+    }
+    .course_heading4 ,.course_heading2
+    {
+        font-size: 12px;
+    }
+    .course_heading1{
+        font-size: 10px;
+    }
+    .course_heading3{
+        font-size: 13px;
+    }
+    .text-box{
+        font-size: 8px;
+    }
+    .newsletterBox img{
+        width: 250px;
+        height: 250px;
+    }
+    .search_box {
+        width: calc(100% - 250px);
+    }
+    .newsletterBox {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width:675px) {
+    .overview_txt {
+        width: calc(100% - 250px);
+    }
+    .student{
+        font-size: 10px;
+    }
+}
+@media (max-width:630px) {
+    #navbar{
+        min-height: 75px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    #navbar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h-nav-resp
+    {
+        width: 100%;
+    }
+   .h-nav-resp .item{
+        width: 15%;
+        padding: 0px;
+    }
+
+    .logoTxt {
+        font-size: 35px;
+    }
+    .item_li img{
+        width: 100%;
+        max-height: 25px;
+    }
+    .homebanner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    }
+    .banner_animate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .leftside_container{
+        width: 100%;
+        padding: 20px;
+        width: 100%;
+    }
+    .rightside_container{
+        width: 100%;
+    }
+    .overview_txt h5{
+        font-size: 17px;
+    }
+    .overview h3{
+        font-size: 20px;
+    }
+    .overview p{
+        font-size: 10px;
+    }
+    .newsletterBox img {
+        width: 200px;
+        height: 200px;
+    }
+    .search_box {
+        width: calc(100% - 200px);
+    }
+
+    .search_box input {
+        padding: 10px 0px;
+        width: 100%;
+    }
+}
+@media (max-width:490px) {
+    #navbar .logo {
+        margin: 20px 0px;
+
+    }
+    .logoTxt {
+        font-size: 22px;
+    }
+    .highlightSection .card_box {
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width:466px) {
+    .highlightSection .box {
+        width: 43%;
+
+    }
+}
+@media (max-width:450px) {
+    .newsletterBox{
+    flex-wrap: wrap;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    padding: 34px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    .newsletterBox img{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    }
+    .overview{
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .search_box{
+        width: 100%;
+    }
+    .overview_txt {
+        display: flex;
+        padding-left: 0px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        /* padding: 10px 0px 0px 0px; */
+        z-index: 1;
+        /* margin-top: 100px; */
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .student {
+        width: 80%;
+        font-size: 12px;
+    }
+    .project_heading3{
+        font-size: 12px;
+    }
+    .view-Course{
+        font-size: 10px;
+    }
+    .card_heading , .project_heading2 , .project_heading1{
+        font-size: 17px;
+    }
+    .overview h3 {
+        font-size: 15px;
+    }
+    .overview_img {
+        top: 80px;
+        width: 90%;
+        height: auto;
+        position: relative;
+    }
+    .aboutImg{
+        width: 80%;
+    }
+    .about-content{
+        width: 90%;
+    }
+    .about-section{
+        max-height: 480px;
+    }
+
+}
+@media (max-width:425px) {
+    :placeholder-shown{
+        float: left;
+    }
+    .search-btn-box{
+        width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    }
+    .item_li h3 {
+        font-size: 7px;
+    }
+    .item_li img {
+        max-width: 15px;
+        max-height: 15px;
+        width: auto;
+        height: auto;
+    }
+    .item_li{
+        max-width: 50px;
+        width: auto;
+    }
+    .h-nav-resp .item{
+        justify-content: center;
+    }
+    .highlightSection {
+        min-height: 800px;
+        height: auto;
+        max-height: max-content;
+    }
+    .highlightSection .box {
+        width: 90%;
+    }
+    .project_box {
+        width: 80%;
+    }
+    .footer_span{
+        font-size: 10px;
+    }
+    .footer_h2 {
+        font-size: 13px;
+
+    }
+    .footerbox1, .footerbox2 {
+        max-height: 300px;
+        height: auto;
+    }
+    .footerbox3 br{
+        display: none;
+    }
+
+    
+}
+@media (max-width:320px) {
+    .hidden{
+        display: none;
+    }
 }

@@ -20,7 +20,7 @@
             <h2 class="logoTxt">E-lea<span style="color: rgb(15, 237, 237);">rn</span>-ing</h2>
         </div>
         <ul class="h-nav-resp">
-            <li class="item"><a href="index.php">
+            <li class="item hidden"><a href="index.php">
                     <div class="item_li">
                         <img src="images/house-solid.svg" alt="">
                         <h3> Home</h3>
@@ -47,7 +47,7 @@
                         <h3>Logout</h3>
                     </div>
                 </a></li>
-            <li class="item"><a href="online_class.php">
+            <li class="item"><a href="#classes">
                     <div class="item_li">
                         <img src="images/school-solid.svg" alt="">
                         <h3>Classes</h3>
@@ -60,6 +60,11 @@
                     </div>
                 </a></li>
         </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </div>
     <!-- home section start -->
 
@@ -168,8 +173,6 @@
                         <br> <a href="login.php"> <button class="view-Course">View Course</button></a>
                 </div>
             </div>
-        </div>
-        <div class="project_container">
             <div class="project_box">
                 <img src="Cloud-Computing-mob.jpeg" alt="" class="project_imgbanner">
                 <div class="text-box">
@@ -205,10 +208,94 @@
                     <br> <a href="c.html"> <button class="view-Course">View Course</button></a>
                 </div>
             </div>
+
         </div>
+     
 
     </div>
 
+
+       <!-- //Class section // -->
+   <a href="#" name="classes" style="list-style: none; text-decoration: none;"> <div class="project_section"></a>
+    <h5 class="project_heading1"> Our Classes</h5>
+    <h2 class="project_heading2">Discover the available Classes</h2>
+    <p class="project_heading3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa fugiat,
+        placeat nostrum quibusdam poss<br>imus nam, repellendus repellat doloribus labore laborum disti.</p>
+    <br><br>
+    <div class="project_container">
+        <div class="project_box">
+            <img src="webdevelopemt.jpeg" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">Web development</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                <br>  <a href="login.php"> <button class="view-Course">View Course</button></a>  
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="DSA-course-min.jpeg" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">DSA</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                <br> <a href="login.php"> <button class="view-Course">View Course</button></a>
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="java-training.png" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">Java</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                    <br> <a href="login.php"> <button class="view-Course">View Course</button></a>
+            </div>
+        </div>
+        <div class="project_box">
+            <img src="Cloud-Computing-mob.jpeg" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">Cloud Computing</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                <br> <button class="view-Course">View Course</button>
+            </div>
+        </div>
+     
+         <div class="project_box">
+            <img src="cpp.png" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">C++</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                <br>  <a href="c++.html"> <button class="view-Course">View Course</button></a>
+            </div>
+        </div>
+
+        <div class="project_box">
+            <img src="phpbanner.jpeg" alt="" class="project_imgbanner">
+            <div class="text-box">
+                <h5 class="course_heading1">Monday - Friday | 10 AM - 12 AM</h5>
+                <h4 class="course_heading2">PHP</h4>
+                <p class="course_heading3">$17 / Month</p>
+                <span class="course_heading4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus.</span>
+                <br> <a href="c.html"> <button class="view-Course">View Course</button></a>
+            </div>
+        </div>
+
+    </div>
+ 
+
+</div>
     <!-- home section ends -->
     <!-- description section start -->
 
@@ -342,7 +429,10 @@
             <div class="search_box">
                 <h2>Stay Updated</h2>
                 <h1> Join Our Newsletter</h1>
-                <input type="text"><a href="login.php"> <button class="newletterBtn">Send</button></a>
+                    <div class="search-btn-box">
+                            <input type="text" placeholder="Enter Your Query"> 
+                            <button class="newletterBtn"><a href="login.php"></a>Send</button>
+                    </div>
             </div>
         </div>
     </div>
@@ -433,12 +523,27 @@
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-            items: 4,
             loop: true,
             margin: 10,
             autoplay: true,
             autoplayTimeout: 1000,
-            autoplayHoverPause: true
+            autoplayHoverPause: true,
+            responsive:{
+                        0:{
+                            items:1
+                        },
+                        400:{
+
+                            items:2
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+
         });
         $('.play').on('click', function () {
             owl.trigger('play.owl.autoplay', [1000])
