@@ -590,9 +590,9 @@ h1:hover{
 
 }
 .p-c-2{
-    max-height: 1000px !important; 
     height: auto;
     min-height: auto;
+    margin-bottom: unset;
 }
 .project_box{
     width: 30%;
