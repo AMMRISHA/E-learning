@@ -589,6 +589,11 @@ h1:hover{
     /* border: 2px solid red; */
 
 }
+.p-c-2{
+    max-height: 1000px !important; 
+    height: auto;
+    min-height: auto;
+}
 .project_box{
     width: 30%;
     height: auto;
@@ -1061,7 +1066,13 @@ form{
 }
 
 @media (max-width:1000px) {
-
+    .search_box input {
+        padding: 15px 0px;
+        width: 50%;
+    }
+    .search_box .newletterBtn {
+        padding: 15px 20px;
+    }
     .homebanner{
         overflow: hidden;
         max-height: 700px;
@@ -1247,6 +1258,17 @@ form{
         width: 100%;
         padding-right: 10px;
     }
+    .wrapper {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+    .card_section {
+        /* margin-bottom: 50px; */
+        width: 90%;
+        margin: auto;
+    }
 
 }
 
@@ -1325,7 +1347,7 @@ form{
 
     .search_box input {
         padding: 10px 0px;
-        width: 100%;
+        width: 55%;
     }
 }
 @media (max-width:490px) {
@@ -1428,8 +1450,13 @@ form{
 
 }
 @media (max-width:425px) {
+    .search_box input {
+        padding: 10px 0px;
+        width: 90%;
+    }
     :placeholder-shown{
         float: left;
+        font-size: 10px;
     }
     .search-btn-box{
         width: 100%;
