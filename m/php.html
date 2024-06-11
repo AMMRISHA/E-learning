@@ -17,17 +17,12 @@
     <nav>
         <a href="#introduction">Introduction</a>
         <a href="#basics">Data type</a>
-        <a href="#Conditional">Conditional Statements</a>
-        <a href="#Iteration">Iteration Statements</a>
-        <a href="#Arrays">Arrayss</a>
-        <a href="#Strings">Strings</a>
-        <a href="#Functions"> Functions</a>
-        <a href="#Pointers"> Pointers</a>
-        <a href="# Memory"> Memory Management</a>
-        <a href="#Structures"> Structures & Unions</a>
+        <a href="#operator">Operator</a>
+        <a href="#Arrays">Arrays</a>
+    
         <!-- Add more links as needed -->
     </nav>
-
+<div class="body-section">
     <section id="introduction">
         <h1>Introduction to PHP Programming</h1>
         <h3>What is PHP?⁣</h3>
@@ -92,385 +87,963 @@
             <li>resourcs</li>
         </ul>
         <h3>The first five are called simple data types and the last three are compound data types: </h3>
-        <p> <span class="bold"></span>1. Integer: Integers hold only whole numbers including positive and negative numbers, i.e., numbers without fractional part or decimal 
+
+<!-- 
+        integer Datatyps -->
+        <p> <span class="bold">1. Integer:</span> Integers hold only whole numbers including positive and negative numbers, i.e., numbers without fractional part or decimal 
             point. They can be decimal (base 10), octal (base 8), or hexadecimal (base 16). The default base is decimal (base 10). The octal integers can be declared with leading 0 and the hexadecimal can be declared with leading 0x. The range of integers must lie between -2^31 to 2^31. </p>
-        <h3>C Constants</h3>
-        When you don't want the variables you declare to get modified intentionally or mistakenly in the <br>later part
-        of
-        your program by you or others, you use the const keyword (this will declare the variable as "constant",<br>
-        which
-        means unchangeable and read-only).
-        You should always declare the variable as constant when you have values that are unlikely to change,<br> like
-        any
-        mathematical constant as PI.
-        When you declare a constant variable, it must be assigned a value.
-        </p>
+        
 
-        <p>The array types and structure types are referred collectively as the aggregate types. The type of a <br>
-            function
-            specifies
-            the type of the function's return value. We will see the basic types in the following section, where <br> as
-            other types will be covered in the upcoming chapters.</p>
-    </section>
+            <p dir="ltr"><b><strong>Example:</strong></b><span>&nbsp;</span></p><div id="GFG_AD_Desktop_InContent_ATF_336x280" style="text-align:center;max-height: 280px;"></div><div id="GFG_AD_gfg_mobile_336x280_1" style="margin: 5px 0;"></div>
 
-    <section id="Conditional">
-        <h2>Conditional Statements</h2>
-        <p>
-        <h3> IF...Else statements</h3>Sometimes, we wish to execute one set of instructions if a particular
-        condition
-        is met, and another set of instructions if it is not.
-        This kind of situation is dealt with in C language using a decision control system.
-
-        The condition for the if statement is always enclosed within a pair of parentheses.
-        If the condition is true, then the set of statements following the if statement will execute.
-        And if the condition evaluates to false, then the statement will not execute, instead, the program skips
-        that
-        enclosed part of the code.
-        An expression in if statements are defined using relational operators. Comparing two values using relational
-        operators allows us to determine
-        whether they are equal, unequal, greater than, or less than.
-        If we want to execute a particular code in some situation and its vice versa /opposite/or different code if that
-        situation doesn’t occurs then if..else statements can be used.
-        Its all depend on the condition. If the condition returns true value the situation has occurred and the
-        true part of
-        code will be executed and if condition returns false value false part of the code will be executed</p>
-        <h4> Syntax of if-else statements:</h4>
-        <code>if ( condition ){<br>
-            statements;}<br>
-             else {<br>
-            statements;} <br>
-            </code>
-        <p>
-        <h3>Switch Case Statements</h3>
-        <h4>What is Switch?</h4>The control statement that allows us to make a decision effectively from the number
-        of
-        choices is called a switch, or a switch case-default since these three keywords go together to make up the
-        control statement. The expression in switch returns an integral value, which is then compared with different
-        cases. Switch executes that block of code, which matches the case value. If the value does not match with
-        any of
-        the cases, then the default block is executed.
-        <h4> Syntax of Switch statements:</h4>
-        <code>switch ( integer expression ) 
-        {  <br>
-        case {value 1} : <br>  
-        do this ; <br>
-         
-        case {value 2} : <br>  
-         do this ;  <br>
-        case {value 3} : <br>  
-        do this ; <br> 
-         
-        default : <br>  
-        do this ; <br>
-         } 
-        </code></p>
-
-    </section>
-    <section id="Iteration">
-        <h2>Iteration Statements</h2>
-        <p>
-        <h3>C Loops</h3>In programming, we often have to perform an action, again and again, with little or no
-        variations in the details each time they are executed. This need is met by a mechanism known as a loop.
-
-        The versatility of the computer lies in its ability to perform the set of instructions repeatedly. This involves
-        repeating some code in the program, either a specified number of times or until a particular condition is
-        satisfied. Loop-controlled instructions are used to perform this repetitive operation efficiently ensuring the
-        program doesn’t look redundant at the same time due to the repetitions.
-        <h4>Following are the three types of loops in C programming.</h4>
-        <ul>
-            <li>For loop</li>
-            <li>While loop</li>
-            <li>do-while loop</li>
-        </ul>
-        </p>
-        <h3>For Loop</h3>
-        <p>A for loop is a repetition control structure that allows us to efficiently write a loop that will execute a
-            specific number of times. The for loop working is as follows:
-        <ul>
-            <li>The initialization statement is executed only once; in this statement, we initialize a variable to some
-                value.</li>
-            <li>The initialization statement is executed only once; in this statement, we initialize a variable to some
-                value.</li>
-            <li>The loop keeps executing until the test expression is false. When the test expression is false, then the
-                loop terminates. </li>
-        </ul>
-        <h4> Syntax of For Loop:</h4>
-        <code>for (initialise counter; test counter; increment / decrement counter) <br>
-    { <br>
-        //set of statements
-    } <br>
-    </code></p>
-        </p>
-        <h3>While Loop</h3>While loop is called a pre-tested loop. The while loop allows code to be executed multiple
-        times, depending upon a boolean condition that is given as a test expression. While introducing for loops, we
-        saw that the number of iterations is known, whereas while loops are used in situations where we do not know the
-        exact number of iterations of the loop. The while loop execution is terminated based on the test condition which
-        evaluates to either true or false.
-        <h4> Syntax of While Loop:</h4>
-        <code>while (condition test) <br>
-            { <br>
-                // Set of statements <br>
-            }
+            <gfg-tabs data-run-ide="true">
+                        <gfg-tab slot="tab">PHP</gfg-tab>
+            <gfg-panel slot="panel" data-code-lang="php">
+                <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
             
-    </code></p>
+            <span class=c1>// decimal base integers</span>
+            <span class=nv>$deci1</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span> 
+            <span class=nv>$deci2</span> <span class=o>=</span> <span class=mi>654</span><span class=p>;</span> 
+            
+            <span class=c1>// octal base integers</span>
+            <span class=nv>$octal1</span> <span class=o>=</span> <span class=mo>07</span><span class=p>;</span> 
+            
+            <span class=c1>// hexadecimal base integers</span>
+            <span class=nv>$octal</span> <span class=o>=</span> <span class=mh>0x45</span><span class=p>;</span> 
+            
+            <span class=nv>$sum</span> <span class=o>=</span> <span class=nv>$deci1</span> <span class=o>+</span> <span class=nv>$deci2</span><span class=p>;</span>
+            <span class=k>echo</span> <span class=nv>$sum</span><span class=p>;</span>
+            <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n\n</span><span class=s2>&quot;</span><span class=p>;</span>
+            
+            <span class=c1>//returns data type and value</span>
+            <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$sum</span><span class=p>)</span>
+              
+            <span class=cp>?&gt;</span>
+            </pre></div></code>
+
+            <div class="code-output"><br><strong>Output</strong><pre>704
+
+</pre>
+            </div>
+
+<!-- double datatypes -->
+                <p> <span class="bold">2. Double:</span> Can hold numbers containing fractional or decimal parts including positive and negative numbers or a number in exponential form. By default, the variables add a minimum number of decimal places. The Double data type is the same as a float as floating-point numbers or real numbers.
+                    <p dir="ltr"><b><strong>Example:&nbsp;</strong></b></p>
+
+                    <gfg-tabs data-run-ide="true">
+                            
+                    <gfg-panel slot="panel" data-code-lang="php">
+                        <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+                    
+                    <span class=nv>$val1</span> <span class=o>=</span> <span class=mf>50.85</span><span class=p>;</span> 
+                    <span class=nv>$val2</span> <span class=o>=</span> <span class=mf>654.26</span><span class=p>;</span> 
+                    
+                    <span class=nv>$sum</span> <span class=o>=</span> <span class=nv>$val1</span> <span class=o>+</span> <span class=nv>$val2</span><span class=p>;</span>
+                    
+                    <span class=k>echo</span> <span class=nv>$sum</span><span class=p>;</span>
+                    <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n\n</span><span class=s2>&quot;</span><span class=p>;</span>
+                    
+                    <span class=c1>//returns data type and value</span>
+                    <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$sum</span><span class=p>)</span>
+                      
+                    <span class=cp>?&gt;</span>
+                    </pre></div></code>
+                    </gfg-panel></gfg-tabs><div class="code-output"><br><strong>Output</strong><pre>705.11</pre></div><p dir="ltr">
+
+
+
+            <!-- string datatypes with example -->
+
+            <p> <span class="bold">3. String:</span> Can hold numbers containing fractional or decimal parts including positive and negative numbers or a number in exponential form. By default, the variables add a minimum number of decimal places. The Double data type is the same as a float as floating-point numbers or real numbers.
+                <p dir="ltr"><b><strong>Example:&nbsp;</strong></b></p>
+
+                <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+
+                    <span class=nv>$name</span> <span class=o>=</span> <span class=s2>&quot;Krishna&quot;</span><span class=p>;</span>
+                    <span class=k>echo</span> <span class=s2>&quot;The name of the Geek is </span><span class=si>$name</span><span class=s2> </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+                    <span class=k>echo</span> <span class=s1>&#39;The name of the geek is $name &#39;</span><span class=p>;</span>
+                    <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n\n</span><span class=s2>&quot;</span><span class=p>;</span>
+                    
+                    <span class=c1>//returns data type, size and value</span>
+                    <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$name</span><span class=p>)</span>
+                      
+                    <span class=cp>?&gt;</span>
+                    </pre></div></code>
+                    </gfg-panel></gfg-tabs><div class="code-output"><br><strong>Output</strong><pre>The name of the Geek is Krishna 
+                    The name of the geek is $name 
+                    
+                    string(7) "Krishna"</pre></div><p dir="ltr"><b><strong>4. Boolean</strong></b><span>: Boolean data types are used in conditional testing. Hold only two values, either TRUE(1) or FALSE(0). Successful events will return </span><i><em class="GFGEditorTheme__textItalic">true</em></i><span> and unsuccessful events return </span><i><em class="GFGEditorTheme__textItalic">false.</em></i><span> NULL type values are also treated as </span><i><em class="GFGEditorTheme__textItalic">false</em></i><span> in Boolean. Apart from NULL, 0 is also considered false in boolean. If a string is empty then it is also considered false in boolean data type.&nbsp;</span></p>
+                    
+                    <p dir="ltr"><br><b><strong>Example:</strong></b><span>&nbsp; &nbsp;</span></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+                </section>
+
+
+    <section id="operator">
+        <h2>Operator in PHP</h2>
+        <p>
+        In this article, we will see how to use the operators in PHP, & various available operators along with understanding their implementation through the examples.
+
+        Operators are used to performing operations on some values. In other words, we can describe operators as something that takes some values, performs some operation on them, and gives a result. From example, “1 + 2 = 3” in this expression ‘+’ is an operator. It takes two values 1 and 2, performs an addition operation on them to give 3. 
+        
+        Just like any other programming language, PHP also supports various types of operations like arithmetic operations(addition, subtraction, etc), logical operations(AND, OR etc), Increment/Decrement Operations, etc. Thus, PHP provides us with many operators to perform such operations on various operands or variables, or values. These operators are nothing but symbols needed to perform operations of various types. Given below are the various groups of operators:
+    
         </p>
-        <h3> Do-While Loop</h3>In do-while loops, the execution is terminated based on the test condition, very similar
-        to how it is done in a while loop. The main difference between the do-while loop and while loop is that, in the
-        do-while loop, the condition is tested at the end of the loop body, whereas the other two loops are
-        entry-controlled. In a do-while loop, the loop body will execute at least once irrespective of the test
-        condition <br>
-        Sometimes, while executing a loop, it becomes necessary to jump out of the loop. For this, we make use of the
-        break statement and the continue statement
-        <h4> Syntax of Do-While Loop:</h4>
-        <code>do <br>
-            {
-                statements; <br>
-            } while (test condition); <br>            
-</code></p>
+
+        <ul>
+            <li>Arithmetic Operators</li>
+            <li>Logical or Relational Operators</li>
+             <li>  Comparison Operators</li> 
+             <li>  Conditional or Ternary Operators</li> 
+             <li>   Assignment Operators</li> 
+             <li>  Spaceship Operators (Introduced in PHP 7)</li> 
+             <li>    Array Operators</li> 
+             <li>    Increment/Decrement Operators</li> 
+             <li>  String Operators</li>
+        </ul>
+         <p dir="ltr" style="text-align: justify;"><b><strong>Arithmetic Operators:&nbsp;</strong></b></p>
+        <p dir="ltr" style="text-align: justify;"><span>The arithmetic operators are used to perform simple mathematical operations like addition, subtraction, multiplication, etc. Below is the list of arithmetic operators along with their syntax and operations in PHP.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><p style="text-align: justify;"><span>+</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Addition</span></p><div id="GFG_AD_Desktop_InContent_ATF_336x280" style="text-align:center;max-height: 280px;"></div><div id="GFG_AD_gfg_mobile_336x280_1" style="margin: 5px 0;"></div>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x + $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Sum the operands</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>&#8211;</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Subtraction</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x &#8211; $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Differences the operands</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>*</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Multiplication</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x * $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Product of the operands</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>/</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Division</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x / $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>The quotient of the operands</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>**</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Exponentiation</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x ** $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x raised to the power $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>%</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Modulus</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x % $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>The remainder of the operands</span></p>
+        </td></tr></tbody></table><p dir="ltr"><b><strong>Note</strong></b><span>: The exponentiation has been introduced in PHP 5.6.&nbsp;</span></p>
+        <p dir="ltr" style="text-align: justify;"><b><strong>Example</strong></b><span>: This example explains the arithmetic operator in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+        <span class=c1>// Define two numbers</span>
+        <span class=nv>$x</span> <span class=o>=</span> <span class=mi>10</span><span class=p>;</span>
+        <span class=nv>$y</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>
+        
+        <span class=c1>// Addition</span>
+        <span class=k>echo</span> <span class=s2>&quot;Addition: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>+</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+        <span class=c1>// Subtraction</span>
+        <span class=k>echo</span> <span class=s2>&quot;Subtraction: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>-</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+        <span class=c1>// Multiplication</span>
+        <span class=k>echo</span> <span class=s2>&quot;Multiplication: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>*</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+        <span class=c1>// Division</span>
+        <span class=k>echo</span> <span class=s2>&quot;Division: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>/</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+        <span class=c1>// Exponentiation</span>
+        <span class=k>echo</span> <span class=s2>&quot;Exponentiation: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>**</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+        <span class=c1>// Modulus</span>
+        <span class=k>echo</span> <span class=s2>&quot;Modulus: &quot;</span> <span class=o>.</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>%</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>.</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><div class="code-output"><br><strong>Output</strong><pre>Addition: 13
+        Subtraction: 7
+        Multiplication: 30
+        Division: 3.3333333333333
+        Exponentiation: 1000
+        Modulus: 1
+        </pre></div><h3><b><strong>Logical or Relational Operators:</strong></b></h3><p dir="ltr" style="text-align: justify;"><span>These are basically used to operate with conditional statements and expressions. Conditional statements are based on conditions. Also, a condition can either be met or cannot be met so the result of a conditional statement can either be true or false. Here are the logical operators along with their syntax and operations in PHP.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><span>and</span></td><td><span>Logical AND</span></td><td><span>$x and $y</span></td><td><span>True if both the operands are true else false</span></td></tr><tr><td><span>or</span></td><td><span>Logical OR</span></td><td><span>$x or $y</span></td><td><span>True if either of the operands is true else false</span></td></tr><tr><td><span>xor</span></td><td><span>Logical XOR</span></td><td><span>$x xor $y</span></td><td><span>True if either of the operands is true and false if both are true</span></td></tr><tr><td><span>&amp;&amp;</span></td><td><span>Logical AND</span></td><td><span>$x &amp;&amp; $y</span></td><td><span>True if both the operands are true else false</span></td></tr><tr><td><span>||</span></td><td><span>Logical OR</span></td><td><span>$x || $y</span></td><td><span>True if either of the operands is true else false</span></td></tr><tr><td><span>!</span></td><td><span>Logical NOT</span></td><td><span>!$x</span></td><td><span>True if $x is false</span></td></tr></tbody></table><p dir="ltr" style="text-align: justify;"><b><strong>Example</strong></b><span>: This example describes the logical &amp; relational operator in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+        <span class=nv>$x</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+        <span class=nv>$y</span> <span class=o>=</span> <span class=mi>30</span><span class=p>;</span>
+          <span class=k>if</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=mi>50</span> <span class=k>and</span> <span class=nv>$y</span> <span class=o>==</span> <span class=mi>30</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;and Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>if</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=mi>50</span> <span class=k>or</span> <span class=nv>$y</span> <span class=o>==</span> <span class=mi>20</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;or Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>if</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=mi>50</span> <span class=k>xor</span> <span class=nv>$y</span> <span class=o>==</span> <span class=mi>20</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;xor Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>if</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=mi>50</span> <span class=o>&amp;&amp;</span> <span class=nv>$y</span> <span class=o>==</span> <span class=mi>30</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;&amp;&amp; Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>if</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=mi>50</span> <span class=o>||</span> <span class=nv>$y</span> <span class=o>==</span> <span class=mi>20</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;|| Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nv>$z</span><span class=p>)</span>
+              <span class=k>echo</span> <span class=s2>&quot;! Success </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        <span class=cp>?&gt;</span><span class=x> </span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>and Success </span><br><span>or Success </span><br><span>xor Success </span><br><span>&amp;&amp; Success </span><br><span>|| Success </span><br><span>! Success </span></pre><p dir="ltr" style="text-align: justify;"><b><strong>Comparison Operators: </strong></b><span>These operators are used to compare two elements and outputs the result in boolean form. Here are the comparison operators along with their syntax and operations in PHP.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><span>Operator</span></th><th><span>Name</span></th><th><span>Syntax</span></th><th><span>Operation</span></th></tr></thead><tbody><tr><td><span>==</span></td><td><span>Equal To</span></td><td><span>$x == $y</span></td><td><span>Returns True if both the operands are equal</span></td></tr><tr><td><span>!=</span></td><td><span>Not Equal To</span></td><td><span>$x != $y</span></td><td><span>Returns True if both the operands are not equal</span></td></tr><tr><td><span>&lt;&gt;</span></td><td><span>Not Equal To</span></td><td><span>$x &lt;&gt; $y</span></td><td><span>Returns True if both the operands are unequal</span></td></tr><tr><td><span>===</span></td><td><span>Identical</span></td><td><span>$x === $y</span></td><td><span>Returns True if both the operands are equal and are of the same type</span></td></tr><tr><td><span>!==</span></td><td><span>Not Identical</span></td><td><span>$x == $y</span></td><td><span>Returns True if both the operands are unequal and are of different types</span></td></tr><tr><td><span>&lt;</span></td><td><span>Less Than</span></td><td><span>$x &lt; $y</span></td><td><span>Returns True if $x is less than $y</span></td></tr><tr><td><span>&gt;</span></td><td><span>Greater Than</span></td><td><span>$x &gt; $y</span></td><td><span>Returns True if $x is greater than $y</span></td></tr><tr><td><span>&lt;=</span></td><td><span>Less Than or Equal To</span></td><td><span>$x &lt;= $y</span></td><td><span>Returns True if $x is less than or equal to $y</span></td></tr><tr><td><span>&gt;=</span></td><td><span>Greater Than or Equal To</span></td><td><span>$x &gt;= $y</span></td><td><span>Returns True if $x is greater than or equal to $y</span></td></tr></tbody></table><p dir="ltr"><b><strong>Example</strong></b><span>: This example describes the comparison operator in PHP.</span></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$a</span> <span class=o>=</span> <span class=mi>80</span><span class=p>;</span>
+          <span class=nv>$b</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+          <span class=nv>$c</span> <span class=o>=</span> <span class=s2>&quot;80&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Here var_dump function has been used to </span>
+          <span class=c1>// display structured information. We will learn </span>
+          <span class=c1>// about this function in complete details in further</span>
+          <span class=c1>// articles.</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>==</span> <span class=nv>$c</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>!=</span> <span class=nv>$b</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>&lt;&gt;</span> <span class=nv>$b</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>===</span> <span class=nv>$c</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>!==</span> <span class=nv>$c</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>&lt;</span> <span class=nv>$b</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>&gt;</span> <span class=nv>$b</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>&lt;=</span> <span class=nv>$b</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$a</span> <span class=o>&gt;=</span> <span class=nv>$b</span><span class=p>);</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>bool(true)</span><br><span>bool(true)</span><br><span>bool(true)</span><br><span>bool(false)</span><br><span>bool(true)</span><br><span>bool(false)</span><br><span>bool(true)</span><br><span>bool(false)</span><br><span>bool(true)</span></pre><p dir="ltr" style="text-align: justify;"><b><strong>Conditional or Ternary Operators</strong></b><b><strong>:</strong></b></p>
+        <p dir="ltr" style="text-align: justify;"><span>These operators are used to compare two values and take either of the results simultaneously, depending on whether the outcome is TRUE or FALSE. These are also used as a shorthand notation for </span><i><em class="GFGEditorTheme__textItalic">if&#8230;else</em></i><span> statement that we will read in the article on decision making.&nbsp;</span></p>
+        <p dir="ltr" style="text-align: justify;"><b><strong>Syntax</strong></b><span>:</span></p>
+        <pre><span>$var = (condition)? value1 : value2;</span></pre><p dir="ltr" style="text-align: justify;"><span>Here, the condition will either evaluate as true or false. If the condition evaluates to True, then value1 will be assigned to the variable $var otherwise value2 will be assigned to it.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><p style="text-align: justify;"><span>?:</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Ternary</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>If the condition is true? then $x : or else $y. This means that if the condition is true then the left result of the colon is accepted otherwise the result is on right.</span></p>
+        </td></tr></tbody></table><p dir="ltr" style="text-align: justify;"><b><strong>Example</strong></b><span>: This example describes the Conditional or Ternary operators in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=o>-</span><span class=mi>12</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=p>(</span><span class=nv>$x</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span> <span class=o>?</span> <span class=s1>&#39;The number is positive&#39;</span> <span class=o>:</span> <span class=s1>&#39;The number is negative&#39;</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>The number is negative</span></pre><p dir="ltr"><b><strong>Assignment Operators: </strong></b><span>These operators are used to assign values to different variables, with or without mid-operations. Here are the assignment operators along with their syntax and operations, that PHP provides for the operations.</span></p>
+        <table border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><p style="text-align: justify;"><span>=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Assign</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x = $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Operand on the left obtains the value of the operand on the right</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>+=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Add then Assign</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x += $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Simple Addition same as $x = $x + $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>-=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Subtract then Assign</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x -= $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Simple subtraction same as $x = $x &#8211; $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>*=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Multiply then Assign</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x *= $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Simple product same as $x = $x * $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>/=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Divide then Assign (quotient)</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x /= $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Simple division same as $x = $x / $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>%=</span></p>
+        </td><td><span>Divide then Assign (remainder)</span></td><td><p dir="ltr" style="text-align: justify;"><span>$x %= $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Simple division same as $x = $x % $y</span></p>
+        </td></tr></tbody></table><p dir="ltr" style="text-align: justify;"><b><strong>Example</strong></b><span>: This example describes the assignment operator in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=c1>// Simple assign operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>75</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Add then assign operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>100</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>+=</span> <span class=mi>200</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Subtract then assign operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>70</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>-=</span> <span class=mi>10</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Multiply then assign operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>30</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>*=</span> <span class=mi>20</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Divide then assign(quotient) operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>100</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>/=</span> <span class=mi>5</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// Divide then assign(remainder) operator</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>%=</span> <span class=mi>5</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$y</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p><div style="text-align:center;margin:20px 0;max-height:280px" id="GFG_AD_gfg_outstream_incontent-1"></div>
+        <pre><span>75</span><br><span>300</span><br><span>60</span><br><span>600</span><br><span>20</span><br><span>0</span></pre><p dir="ltr" style="text-align: justify;"><b><strong>Array Operators: </strong></b><span>These operators are used in the case of arrays. Here are the array operators along with their syntax and operations, that PHP provides for the array operation.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><p style="text-align: justify;"><span>+</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Union</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x + $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Union of both i.e., $x and $y</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>==</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Equality</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x == $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Returns true if both has same key-value pair</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>!=</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Inequality</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x != $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Returns True if both are unequal</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>===</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Identity</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x === $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Returns True if both have the same key-value pair in the same order and of the same type</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>!==</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Non-Identity</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x !== $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Returns True if both are not identical to each other</span></p>
+        </td></tr><tr><td><p style="text-align: justify;"><span>&lt;&gt;</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Inequality</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>$x &lt;&gt; $y</span></p>
+        </td><td><p dir="ltr" style="text-align: justify;"><span>Returns True if both are unequal</span></p>
+        </td></tr></tbody></table><p dir="ltr" style="text-align: justify;"><b><strong>Example</strong></b><span>: This example describes the array operation in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=k>array</span><span class=p>(</span><span class=s2>&quot;k&quot;</span> <span class=o>=&gt;</span> <span class=s2>&quot;Car&quot;</span><span class=p>,</span> <span class=s2>&quot;l&quot;</span> <span class=o>=&gt;</span> <span class=s2>&quot;Bike&quot;</span><span class=p>);</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=k>array</span><span class=p>(</span><span class=s2>&quot;a&quot;</span> <span class=o>=&gt;</span> <span class=s2>&quot;Train&quot;</span><span class=p>,</span> <span class=s2>&quot;b&quot;</span> <span class=o>=&gt;</span> <span class=s2>&quot;Plane&quot;</span><span class=p>);</span>
+        
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>+</span> <span class=nv>$y</span><span class=p>);</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>==</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>!=</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>&lt;&gt;</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>===</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nb>var_dump</span><span class=p>(</span><span class=nv>$x</span> <span class=o>!==</span> <span class=nv>$y</span><span class=p>)</span> <span class=o>+</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>array(4) {</span><br><span>  ["k"]=&gt;</span><br><span>  string(3) "Car"</span><br><span>  ["l"]=&gt;</span><br><span>  string(4) "Bike"</span><br><span>  ["a"]=&gt;</span><br><span>  string(5) "Train"</span><br><span>  ["b"]=&gt;</span><br><span>  string(5) "Plane"</span><br><span>}</span><br><span>bool(false)</span><br><span>bool(true)</span><br><span>bool(true)</span><br><span>bool(false)</span><br><span>bool(true)</span></pre><p dir="ltr" style="text-align: justify;"><b><strong>Increment/Decrement Operators: </strong></b><span>These are called the unary operators as they work on single operands. These are used to increment or decrement values.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><span>++</span></td><td><span>Pre-Increment</span></td><td><span>++$x</span></td><td><span>First increments $x by one, then return $x</span></td></tr><tr><td><span>&#8212;</span></td><td><span>Pre-Decrement</span></td><td><span>&#8211;$x</span></td><td><span>First decrements $x by one, then return $x</span></td></tr><tr><td><span>++</span></td><td><span>Post-Increment</span></td><td><span>$x++</span></td><td><span>First returns $x, then increment it by one</span></td></tr><tr><td><span>&#8212;</span></td><td><span>Post-Decrement</span></td><td><span>$x&#8211;</span></td><td><span>First returns $x, then decrement it by one</span></td></tr></tbody></table><p dir="ltr"><b><strong>Example</strong></b><span>: This example describes the Increment/Decrement operators in PHP.&nbsp;</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=o>++</span><span class=nv>$x</span><span class=p>,</span> <span class=s2>&quot; First increments then prints </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=nv>$x</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=o>++</span><span class=p>,</span> <span class=s2>&quot; First prints then increments </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=nv>$x</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=o>--</span><span class=nv>$x</span><span class=p>,</span> <span class=s2>&quot; First decrements then prints </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=nv>$x</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=o>--</span><span class=p>,</span> <span class=s2>&quot; First prints then decrements </span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>3 First increments then prints </span><br><span>3</span><br><span>2 First prints then increments </span><br><span>3</span><br><span>1 First decrements then prints </span><br><span>1</span><br><span>2 First prints then decrements </span><br><span>1</span></pre><p dir="ltr" style="text-align: justify;"><b><strong>String Operators: </strong></b><span>This operator is used for the concatenation of 2 or more strings using the concatenation operator (&#8216;.&#8217;). We can also use the concatenating assignment operator (&#8216;.=&#8217;) to append the argument on the right side to the argument on the left side.</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Name</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><span>.</span></td><td><span>Concatenation</span></td><td><span>$x.$y</span></td><td><span>Concatenated $x and $y</span></td></tr><tr><td><span>.=</span></td><td><span>Concatenation and assignment</span></td><td><span>$x.=$y</span></td><td><span>First concatenates then assigns, same as $x = $x.$y</span></td></tr></tbody></table><p dir="ltr"><b><strong>Example</strong></b><span>: This example describes the string operator in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=s2>&quot;Geeks&quot;</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=s2>&quot;for&quot;</span><span class=p>;</span>
+          <span class=nv>$z</span> <span class=o>=</span> <span class=s2>&quot;Geeks!!!&quot;</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span> <span class=o>.</span> <span class=nv>$y</span> <span class=o>.</span> <span class=nv>$z</span><span class=p>,</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+          <span class=nv>$x</span> <span class=o>.=</span> <span class=nv>$y</span> <span class=o>.</span> <span class=nv>$z</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=nv>$x</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+       <p><b><strong>Spaceship Operators</strong></b></a><b><strong>:</strong></b></p>
+        <p dir="ltr" style="text-align: justify;"><span>PHP 7 has introduced a new kind of operator called spaceship operator. The spaceship operator or combined comparison operator is denoted by “&lt;=&gt;“. These operators are used to compare values but instead of returning the boolean results, it returns integer values. If both the operands are equal, it returns 0. If the right operand is greater, it returns -1. If the left operand is greater, it returns 1. The following table shows how it works in detail:</span></p>
+        <table  border="1px solid grey" cellpadding="5px" cellspacing="0px"><thead><tr><th><h4><span>Operator</span></h4></th><th><h4><span>Syntax</span></h4></th><th><h4><span>Operation</span></h4></th></tr></thead><tbody><tr><td><span>$x &lt; $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Identical to -1 (right is greater)</span></td></tr><tr><td><span>$x &gt; $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Identical to 1 (left is greater)</span></td></tr><tr><td><span>$x &lt;= $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Identical to -1 (right is greater) or identical to 0 (if both are equal)</span></td></tr><tr><td><span>$x &gt;= $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Identical to 1 (if left is greater) or identical to 0 (if both are equal)</span></td></tr><tr><td><span>$x == $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Identical to 0 (both are equal)</span></td></tr><tr><td><span>$x != $y</span></td><td><span>$x &lt;=&gt; $y</span></td><td><span>Not Identical to 0</span></td></tr></tbody></table><p dir="ltr"><b><strong>Example</strong></b><span>: This example illustrates the use of the spaceship operator in PHP.</span></p>
+        <gfg-tabs data-run-ide="true">
+                    <gfg-tab slot="tab">PHP</gfg-tab>
+        <gfg-panel slot="panel" data-code-lang="php">
+            <code class="language-php"><div class=highlight><pre><span></span><span class=cp>&lt;?php</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+          <span class=nv>$z</span> <span class=o>=</span> <span class=mi>25</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$x</span> <span class=o>&lt;=&gt;</span> <span class=nv>$y</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$x</span> <span class=o>&lt;=&gt;</span> <span class=nv>$z</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$z</span> <span class=o>&lt;=&gt;</span> <span class=nv>$y</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=c1>// We can do the same for Strings</span>
+          <span class=nv>$x</span> <span class=o>=</span> <span class=s2>&quot;Ram&quot;</span><span class=p>;</span>
+          <span class=nv>$y</span> <span class=o>=</span> <span class=s2>&quot;Krishna&quot;</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$x</span> <span class=o>&lt;=&gt;</span> <span class=nv>$y</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$x</span> <span class=o>&lt;=&gt;</span> <span class=nv>$y</span><span class=p>;</span>
+          <span class=k>echo</span> <span class=s2>&quot;</span><span class=se>\n</span><span class=s2>&quot;</span><span class=p>;</span>
+        
+          <span class=k>echo</span> <span class=nv>$y</span> <span class=o>&lt;=&gt;</span> <span class=nv>$x</span><span class=p>;</span>
+        <span class=cp>?&gt;</span>
+        </pre></div></code>
+        </gfg-panel></gfg-tabs><p dir="ltr"><b><strong>Output</strong></b><span>:</span></p>
+        <pre><span>0</span><br><span>1</span><br><span>-1</span><br><span>1</span><br><span>1</span><br><span>-1</span></pre><br/><div id="AP_G4GR_6"></div>
+        
+                                            <div class='article_bottom_text'></div><br>
     </section>
+   
+
+    <!-- arrays completed -->
     <section id="Arrays">
-        <h2>Arrays</h2>
+        <h2>PHP Arrays</h2>
         <p>
         <h3>Array Basics</h3>
-        An array is a collection of data items of the same data type. And it is also known as a subscript variable.
+        Arrays in PHP are a type of data structure that allows us to store multiple elements of similar or different data types under a single variable thereby saving us the effort of creating a different variable for every data. The arrays are helpful to create a list of elements of similar types, which can be accessed using their index or key.
+        <strong>Suppose we want to store five names and print them accordingly. This can be easily done by the use of five different string variables. But if instead of five, the number rises to a hundred, then it would be really difficult for the user or developer to create so many different variables. Here array comes into play and helps us to store every element within a single variable and also allows easy access using an index or a key. An array is created using an array() function in PHP.</strong>
+        <h2>Types of Array in PHP</h2>
         <ul>
-            <li>Items are stored at contiguous memory locations in arrays.</li>
-            <li>It can also store the collection of derived data types such as pointers, structures, etc.</li>
-            <li>The C Language places no limits on the number of dimensions in an array. This means we can create arrays
-                of any number of dimensions. It could be a 2D array or a 3D array or more.</li>
+            <li>Indexed or Numeric Arrays: An array with a numeric index where values are stored linearly.</li>
+            <li>Associative Arrays: An array with a string index where instead of linear storage, each value can be assigned a specific key.</li>
+            <li>Multidimensional Arrays: An array that contains a single or multiple arrays within it and can be accessed via multiple indices.</li>
         </ul>
-        <h3> Dimensions of an array</h3>
-        <ul>
-            <li>A one-dimensional array is like a list.</li>
-            <li>A two-dimensional array is like a table.</li>
-        </ul>
-        Some texts refer to one-dimensional arrays as vectors and two-dimensional arrays as matrices and use the general
-        term arrays when the number of dimensions is unspecified or unimportant.
-        <h3>Properties of Arrays</h3>
-        <ul>
-            <li>An array stores data be it of any data type in contiguous memory locations in RAM.</li>
-            <li>Each element of an array is of the same size i.e. their data types are the same so the memory consumed
-                by each is also the same.</li>
-            <li>Any element of the array with a given index can be accessed very quickly by using its address which can
-                be calculated using the base address and the index number.</li>
-            <li>Index Number – It is the special type of number which allows us to access variables of arrays. Index
-                number provides a method to access each element of an array in a program.</li>
-        </ul>
-        <h4>Defining an Array</h4>
-        <h5>1. Without specifying the size of the array</h5>
-        <code> int arr[]={1,2,3};</code>
-        <h5>1. With specifying the size of the array</h5>
-        <code> int arr[3] <br>
-    arr[0]=1,arr[1]=2,arr[2]=3;
+        <h3>Indexed or Numeric Arrays: </h3>
+        
+        <h3><span>Examples of Indexed or Numeric Arrays</span></h3>
+        <p dir="ltr"><b><strong>Example 1:</strong></b></p>
+        <div class="responsive-tabs">
+        <h2 class="tabtitle">PHP</h2>
+        <div class="tabcontent">
+        
+        <div class="code-block">
+        <div class="code-gutter">
+        <div class="editor-buttons-container">
+        <div class="editor-buttons">
+        <div class="editor-buttons-div" title="Run and Edit">
+                                            <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+        <div  id = "run-and-edit-loader" class="ring-load"></div>
+        <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                            <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+        <div id = "run-code-loader" class="ring-load"></div>
+        <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+        <div  id = "generate-url-loader" class="ring-load"></div>
+        <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                            <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                            <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                        </div>
+        </p></div>
+        </p></div>
+        </p></div>
+        <div class= "code-container">
+        <div id="highlighter_925173" class="syntaxhighlighter nogutter  ">
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+        <td class="code">
+        <div class="container">
+        <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+        <div class="line number2 index1 alt1">&nbsp;</div>
+        <div class="line number3 index2 alt2"><code class="comments">// One way to create an indexed array</code></div>
+        <div class="line number4 index3 alt1"><code class="variable">$name_one</code> <code class="plain">= </code><code class="keyword">array</code><code class="plain">(</code><code class="string">"Zack"</code><code class="plain">, </code><code class="string">"Anthony"</code><code class="plain">, </code><code class="string">"Ram"</code><code class="plain">, </code><code class="string">"Salim"</code><code class="plain">, </code><code class="string">"Raghav"</code><code class="plain">);</code></div>
+        <div class="line number5 index4 alt2">&nbsp;</div>
+        <div class="line number6 index5 alt1"><code class="comments">// Accessing the elements directly</code></div>
+        <div class="line number7 index6 alt2"><code class="functions">echo</code> <code class="string">"Accessing the 1st array elements directly:\n"</code><code class="plain">;</code></div>
+        <div class="line number8 index7 alt1"><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[2], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number9 index8 alt2"><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[0], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number10 index9 alt1"><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[4], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number11 index10 alt2">&nbsp;</div>
+        <div class="line number12 index11 alt1"><code class="comments">// Second way to create an indexed array</code></div>
+        <div class="line number13 index12 alt2"><code class="variable">$name_two</code><code class="plain">[0] = </code><code class="string">"ZACK"</code><code class="plain">;</code></div>
+        <div class="line number14 index13 alt1"><code class="variable">$name_two</code><code class="plain">[1] = </code><code class="string">"ANTHONY"</code><code class="plain">;</code></div>
+        <div class="line number15 index14 alt2"><code class="variable">$name_two</code><code class="plain">[2] = </code><code class="string">"RAM"</code><code class="plain">;</code></div>
+        <div class="line number16 index15 alt1"><code class="variable">$name_two</code><code class="plain">[3] = </code><code class="string">"SALIM"</code><code class="plain">;</code></div>
+        <div class="line number17 index16 alt2"><code class="variable">$name_two</code><code class="plain">[4] = </code><code class="string">"RAGHAV"</code><code class="plain">;</code></div>
+        <div class="line number18 index17 alt1">&nbsp;</div>
+        <div class="line number19 index18 alt2"><code class="comments">// Accessing the elements directly</code></div>
+        <div class="line number20 index19 alt1"><code class="functions">echo</code> <code class="string">"Accessing the 2nd array elements directly:\n"</code><code class="plain">;</code></div>
+        <div class="line number21 index20 alt2"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[2], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number22 index21 alt1"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[0], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number23 index22 alt2"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[4], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number24 index23 alt1">&nbsp;</div>
+        <div class="line number25 index24 alt2"><code class="plain">?></code></div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div></div>
+        <div class="code-editor-container"></div>
+        </p></div>
+        <div class="code-output-container">
+        <div class = "output-block">
+                                <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+        <pre class="output-pre"></pre>
+        </p></div>
+        <div class = "ide-link-div">
+                                <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+        <pre id="ide-url"></pre>
+        </p></div>
+        </p></div>
+        </div></div>
+        <p dir="ltr"><b><strong>Output:&nbsp;</strong></b></p>
+        <pre><span>Accessing the 1st array elements directly:
+        Ram
+        Zack
+        Raghav
+        Accessing the 2nd array elements directly:
+        RAM
+        ZACK
+        RAGHAV
+        
+        </span></pre>
+        <p dir="ltr"><b><strong>Example 2:&nbsp;</strong></b><span> We can traverse an indexed array using loops in PHP. </span></p><div id="GFG_AD_Desktop_InContent_ATF_336x280" style="text-align:center;max-height: 280px;"></div><div id="GFG_AD_gfg_mobile_336x280_1" style="margin: 5px 0;"></div>
+        <div class="responsive-tabs">
+        <h2 class="tabtitle">PHP</h2>
+        <div class="tabcontent">
+        
+        <div class="code-block">
+        <div class="code-gutter">
+        <div class="editor-buttons-container">
+        <div class="editor-buttons">
+        <div class="editor-buttons-div" title="Run and Edit">
+                                            <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+        <div  id = "run-and-edit-loader" class="ring-load"></div>
+        <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                            <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+        <div id = "run-code-loader" class="ring-load"></div>
+        <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+        <div  id = "generate-url-loader" class="ring-load"></div>
+        <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                            <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                            <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                        </div>
+        </p></div>
+        </p></div>
+        </p></div>
+        <div class= "code-container">
+        <div id="highlighter_45004" class="syntaxhighlighter nogutter  ">
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+        <td class="code">
+        <div class="container">
+        <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+        <div class="line number2 index1 alt1">&nbsp;</div>
+        <div class="line number3 index2 alt2"><code class="comments">// Creating an indexed array</code></div>
+        <div class="line number4 index3 alt1"><code class="variable">$name_one</code> <code class="plain">= </code><code class="keyword">array</code><code class="plain">(</code><code class="string">"Zack"</code><code class="plain">, </code><code class="string">"Anthony"</code><code class="plain">, </code><code class="string">"Ram"</code><code class="plain">, </code><code class="string">"Salim"</code><code class="plain">, </code><code class="string">"Raghav"</code><code class="plain">);</code></div>
+        <div class="line number5 index4 alt2">&nbsp;</div>
+        <div class="line number6 index5 alt1"><code class="comments">// One way of Looping through an array using foreach</code></div>
+        <div class="line number7 index6 alt2"><code class="functions">echo</code> <code class="string">"Looping using foreach: \n"</code><code class="plain">;</code></div>
+        <div class="line number8 index7 alt1"><code class="keyword">foreach</code> <code class="plain">(</code><code class="variable">$name_one</code> <code class="keyword">as</code> <code class="variable">$val</code><code class="plain">){</code></div>
+        <div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="variable">$val</code><code class="plain">. </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number10 index9 alt1"><code class="plain">}</code></div>
+        <div class="line number11 index10 alt2">&nbsp;</div>
+        <div class="line number12 index11 alt1"><code class="comments">// count() function is used to count </code></div>
+        <div class="line number13 index12 alt2"><code class="comments">// the number of elements in an array</code></div>
+        <div class="line number14 index13 alt1"><code class="variable">$round</code> <code class="plain">= </code><code class="functions">count</code><code class="plain">(</code><code class="variable">$name_one</code><code class="plain">); </code></div>
+        <div class="line number15 index14 alt2"><code class="functions">echo</code> <code class="string">"\nThe number of elements are $round \n"</code><code class="plain">;</code></div>
+        <div class="line number16 index15 alt1">&nbsp;</div>
+        <div class="line number17 index16 alt2"><code class="comments">// Another way to loop through the array using for</code></div>
+        <div class="line number18 index17 alt1"><code class="functions">echo</code> <code class="string">"Looping using for: \n"</code><code class="plain">;</code></div>
+        <div class="line number19 index18 alt2"><code class="keyword">for</code><code class="plain">(</code><code class="variable">$n</code> <code class="plain">= 0; </code><code class="variable">$n</code> <code class="plain">&lt; </code><code class="variable">$round</code><code class="plain">; </code><code class="variable">$n</code><code class="plain">++){</code></div>
+        <div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[</code><code class="variable">$n</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+        <div class="line number21 index20 alt2"><code class="plain">}</code></div>
+        <div class="line number22 index21 alt1">&nbsp;</div>
+        <div class="line number23 index22 alt2"><code class="plain">?></code></div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div></div>
+        <div class="code-editor-container"></div>
+</p></div>
+<div class="code-output-container">
+<div class = "output-block">
+                        <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+<pre class="output-pre"></pre>
+</p></div>
+<div class = "ide-link-div">
+                        <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+<pre id="ide-url"></pre>
+</p></div>
+</p></div>
+</div></div>
+<p dir="ltr"><b><strong>Output:&nbsp;</strong></b></p>
+<pre><span>Looping using foreach: 
+Zack
+Anthony
+Ram
+Salim
+Raghav
+The number of elements is 5 
+Looping using for: 
+ZACK
+ANTHONY
+RAM
+SALIM
+RAGHAV
 
-</code>
-        </p>
-    </section>
-    <section id="Strings">
-        <h2>Strings</h2>
-        <p>
-        <h3>What are Strings?</h3>
-        A string is an array of characters. Data of the same type are stored in an array, for example, integers can be
-        stored in an integer array, similarly, a group of characters can be stored in a character array. This character
-        array is also known as strings. A string is a one-dimensional array of characters that is terminated by a null
-        (‘\0’).
-        <h2>Declaration of Strings:</h2>
-        Declaring a string is very simple, the same as declaring a one-dimensional array. It’s just that we are
-        considering it as an array of characters.
-        <h4> Below is the syntax for declaring a string.</h4>
-        <code>char string_name[string_size]; <br> <br></code>
-        In the above syntax, string_name is any name given to the string variable, and size is used to define the length
-        of the string, i.e the number of characters that the strings will store. Keep in mind that there is an extra
-        terminating character which is the null character (‘\0’) that is used to indicate the termination of the string.
-        </p>
-    </section>
-    <section id="Function">
-        <h2> Functions</h2>
-        <p>
-            Functions are used to divide a large C program into smaller and less complex pieces.
-            Function can be called multiple or several times to provide reusability and modularity to the C program.
-            Functions are also called procedures or subroutines or methods.
-            A function is also a piece of code that performs a specific task.
-            A function is nothing but a group of code put together and given a name and it can be called anytime without
-            writing the whole code again and again in a program.
-            I know its syntax is a bit difficult to understand but don’t worry after reading this whole information
-            about Functions you will know each and every term or thing related to Functions.
-            <code> <br>
-                #include [stdio.h] <br> 
-                    // Function declaration <br>
-                    void func(); <br>
-                    int main() <br>
-                    { <br>
-                        func(); // calling the function 
-                        return 0; <br>
-                    } <br>
-                    // Function definition <br>
-                    void func() <br>
-                    {
-                        printf("This is the definition part."); <br>
-                    }
-            </code>
-        </p>
-    </section>
-    <section id="Pointer">
-        <h2> Pointers</h2>
-        When we initialise an array, we usually come to know about the,
-        <p>
-        <ul>
-            <li>Memory block which is the space a variable gets in RAM. We can think of that space as a block.</li>
-            <li>Name of the memory block which is the variable’s name itself.</li>
-            <li>Content of that block that is the value stored in that variable</li>
-            <li>Address of the memory block assigned to the variable which is a unique address that allows us to access
-                that variable.</li>
-        </ul>
-        <h3>What is a Pointer?</h3>
-        <ul>
-            <li>Pointer is a variable that contains the address of another variable. It means, it is a variable that
-                points to any other variable.</li>
-            <li>Although this is itself a variable, this contains the address or memory address of any other variable.
-            </li>
-            <li>It can be of type int, char, array, function, or even any other pointer.</li>
-            <li>It can be of type int, char, array, function, or even any other pointer.</li>
-            <li>Pointers in C Language can be declared using *(asterisk symbol).
-                So, pointers are nothing but variables that store addresses of other variables, and by using pointers,
-                we can access other variables too and can even manipulate them</li>
-        </ul>
-        <h3>Applications of Pointers</h3>
-        <ul>
-            <li>Pointers are used to dynamically allocate or deallocate memory using methods such as malloc(),
-                realloc(), calloc(), and free().</li>
-            <li>Pointers are used to point to several containers such as arrays, or structs, and also for passing
-                addresses of containers to functions.</li>
-            <li>Return multiple values from a function </li>
-            <li>Rather than passing a copy of a container to a function, we can simply pass its pointer. This helps
-                reduce the memory usage of the program.</li>
-        </ul>
-        <h4>Here’s one example to demonstrate the use of the address of the operator.</h4>
-        <code> <br>
-            #include <stdio.h> <br>
-            int main() <br>
-            {
-                int a = 100; <br>
-                printf("%d\n", a); <br>
-                printf("Address of variable a is %d", &a); <br>
-                return 0; <br>
-            }
-            </code>
-        </p>
-    </section>
-    <section id="Memory">
-        <h2> Memory Management</h2>
-        <p>
-        <h3>Local Variables</h3>Local variables are variables that are declared inside a function or a block of code.
-        These variables cannot be accessed outside the function they are declared in. Local variables can be accessed
-        only by statements that are inside that function or block of code which means the scope of these variables will
-        be within the function only.</p>
-        <p>
-        <h3>Global Variables</h3>Global variables are variables that are defined outside of all the functions. Global
-        variables hold their values, and we can access them inside any of the functions defined in the program. When we
-        define global variables, the system automatically initializes them.
+</span></pre>
 
-        If cases where we have both the local and global variables with the same name declared, the local variable takes
-        preference.</p>
-        <p>
-        <h3>Static Variables</h3>A static variable is a variable that retains its value even after the program exits the
-        scope it was declared in. Static variables retain their value and are not initialized again in the new scope.
-        The memory assigned to a static variable stays until the end of the program is reached, whereas a normal
-        variable is destroyed when a function it was declared in gets exited. They can be defined inside or outside the
-        function. Static variables are local to the block. The default value of a static variable is zero. The keyword
-        static is used to declare a static variable.
-        <h4>Syntax:</h4>static datatype variable_name = variable_value;</p>
-        <p>
-        <h3>Memory Allocation</h3>
-        <h4> malloc():</h4> malloc stands for memory allocation. This inbuilt function requests memory from the heap and
-        returns a pointer to the memory. The pointer is of the void type and we can typecast it to any other data type
-        of our choice.
-        All the values at the allocation time are initialized to garbage values. The function expects the memory space
-        along with the size we want in bytes at the time it is used.
-        <h5>Syntax:</h5> ptr = (ptr - type *)malloc(size_in_bytes) <br>
-        <h4> calloc():</h4> calloc stands for contiguous memory allocation. Similar to malloc, this function also
-        requests memory from the heap and returns a pointer to the memory. Differences lie in the way we have to call
-        it.
-        First, we have to send as parameters the number of blocks needed along with their size in bytes. Second, in
-        calloc(), the values at the allocation time are initialized to 0 instead of garbage value unlike what happens in
-        malloc().
-        <h5>Syntax:</h5> ptr = (ptr - type *)calloc(n, size_in_bytes) <br></p>
-        <h4>realloc():</h4> realloc stands for reallocation of memory. It is used in cases where the dynamic memory
-        allocated previously is insufficient and there is a need of increasing the already allocated memory to store
-        more data
-        We also pass the previously declared memory address, and the new size of the memory in bytes while calling the
-        function.
-        <h5>Syntax:</h5>ptr = (ptr - type *)realloc(ptr, new_size_in_bytes) <br></p>
-        <h4>Free():</h4> While discussing the disadvantages of dynamic memory allocation, it was mentioned that there is
-        no automatic deletion of dynamically allocated memory when the pointer gets overwritten. So, to manually do it,
-        we use the free() function to free up the allocated memory space. Therefore, free() is used to free up the space
-        occupied by the allocated memory.
-        We just have to pass the pointer as a parameter inside the function and the address being pointed gets freed
-        <h5>Syntax:</h5>free(ptr);<br></p>
-        </p>
+<blockquote>
+    <p dir="ltr"><b><strong>Traversing</strong></b><span>: We can loop through the indexed array in two ways. First by using for loop and secondly by using foreach. You can refer to </span><a href="https://www.geeksforgeeks.org/php-loops/"><span>PHP Loops</span></a><span> for the syntax and basic use.&nbsp;</span></p>
+    </blockquote>
+    <h2 id="associative-arrays"><b><strong>Associative Arrays</strong></b></h2>
+    <p dir="ltr"><span>These types of arrays are similar to the indexed arrays but instead of linear storage, every value can be assigned with a user-defined key of string type.&nbsp;</span></p>
+    <h3><span>Examples of </span><b><strong>Associative Arrays</strong></b></h3>
+    <p dir="ltr"><b><strong>Example 1:&nbsp;&nbsp;</strong></b></p>
+    <div class="responsive-tabs">
+    <h2 class="tabtitle">PHP</h2>
+    <div class="tabcontent">
+    
+    <div class="code-block">
+    <div class="code-gutter">
+    <div class="editor-buttons-container">
+    <div class="editor-buttons">
+    <div class="editor-buttons-div" title="Run and Edit">
+                                        <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+    <div  id = "run-and-edit-loader" class="ring-load"></div>
+    <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                        <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+    <div id = "run-code-loader" class="ring-load"></div>
+    <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+    <div  id = "generate-url-loader" class="ring-load"></div>
+    <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                        <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                        <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                    </div>
+    </p></div>
+    </p></div>
+    </p></div>
+    <div class= "code-container">
+    <div id="highlighter_570511" class="syntaxhighlighter nogutter  ">
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+    <td class="code">
+    <div class="container">
+    <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+    <div class="line number2 index1 alt1">&nbsp;</div>
+    <div class="line number3 index2 alt2"><code class="comments">// One way to create an associative array</code></div>
+    <div class="line number4 index3 alt1"><code class="variable">$name_one</code> <code class="plain">= </code><code class="keyword">array</code><code class="plain">(</code><code class="string">"Zack"</code><code class="plain">=></code><code class="string">"Zara"</code><code class="plain">, </code><code class="string">"Anthony"</code><code class="plain">=></code><code class="string">"Any"</code><code class="plain">, </code></div>
+    <div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Ram"</code><code class="plain">=></code><code class="string">"Rani"</code><code class="plain">, </code><code class="string">"Salim"</code><code class="plain">=></code><code class="string">"Sara"</code><code class="plain">, </code></div>
+    <div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Raghav"</code><code class="plain">=></code><code class="string">"Ravina"</code><code class="plain">);</code></div>
+    <div class="line number7 index6 alt2">&nbsp;</div>
+    <div class="line number8 index7 alt1"><code class="comments">// Second way to create an associative array</code></div>
+    <div class="line number9 index8 alt2"><code class="variable">$name_two</code><code class="plain">[</code><code class="string">"zack"</code><code class="plain">] = </code><code class="string">"zara"</code><code class="plain">;</code></div>
+    <div class="line number10 index9 alt1"><code class="variable">$name_two</code><code class="plain">[</code><code class="string">"anthony"</code><code class="plain">] = </code><code class="string">"any"</code><code class="plain">;</code></div>
+    <div class="line number11 index10 alt2"><code class="variable">$name_two</code><code class="plain">[</code><code class="string">"ram"</code><code class="plain">] = </code><code class="string">"rani"</code><code class="plain">;</code></div>
+    <div class="line number12 index11 alt1"><code class="variable">$name_two</code><code class="plain">[</code><code class="string">"salim"</code><code class="plain">] = </code><code class="string">"sara"</code><code class="plain">;</code></div>
+    <div class="line number13 index12 alt2"><code class="variable">$name_two</code><code class="plain">[</code><code class="string">"raghav"</code><code class="plain">] = </code><code class="string">"ravina"</code><code class="plain">;</code></div>
+    <div class="line number14 index13 alt1">&nbsp;</div>
+    <div class="line number15 index14 alt2"><code class="comments">// Accessing the elements directly</code></div>
+    <div class="line number16 index15 alt1"><code class="functions">echo</code> <code class="string">"Accessing the elements directly:\n"</code><code class="plain">;</code></div>
+    <div class="line number17 index16 alt2"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[</code><code class="string">"zack"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number18 index17 alt1"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[</code><code class="string">"salim"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number19 index18 alt2"><code class="functions">echo</code> <code class="variable">$name_two</code><code class="plain">[</code><code class="string">"anthony"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number20 index19 alt1"><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[</code><code class="string">"Ram"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number21 index20 alt2"><code class="functions">echo</code> <code class="variable">$name_one</code><code class="plain">[</code><code class="string">"Raghav"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number22 index21 alt1">&nbsp;</div>
+    <div class="line number23 index22 alt2"><code class="plain">?></code></div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div></div>
+    <div class="code-editor-container"></div>
+    </p></div>
+    <div class="code-output-container">
+    <div class = "output-block">
+                            <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+    <pre class="output-pre"></pre>
+    </p></div>
+    <div class = "ide-link-div">
+                            <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+    <pre id="ide-url"></pre>
+    </p></div>
+    </p></div>
+    </div></div>
+    <p dir="ltr"><span>Output:&nbsp;</span></p>
+    <pre><span>Accessing the elements directly:
+    zara
+    sara
+    any
+    Rani
+    Ravina
+    
+    </span></pre>
+    <p dir="ltr"><b><strong>Example 2:&nbsp;</strong></b><span> We can traverse associative arrays in a similar way did in numeric arrays using loops. </span></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+    <div class="responsive-tabs">
+    <h2 class="tabtitle">PHP</h2>
+    <div class="tabcontent">
+    
+    <div class="code-block">
+    <div class="code-gutter">
+    <div class="editor-buttons-container">
+    <div class="editor-buttons">
+    <div class="editor-buttons-div" title="Run and Edit">
+                                        <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+    <div  id = "run-and-edit-loader" class="ring-load"></div>
+    <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                        <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+    <div id = "run-code-loader" class="ring-load"></div>
+    <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+    <div  id = "generate-url-loader" class="ring-load"></div>
+    <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                        <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                        <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                    </div>
+    </p></div>
+    </p></div>
+    </p></div>
+    <div class= "code-container">
+    <div id="highlighter_882575" class="syntaxhighlighter nogutter  ">
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+    <td class="code">
+    <div class="container">
+    <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+    <div class="line number2 index1 alt1">&nbsp;</div>
+    <div class="line number3 index2 alt2"><code class="comments">// Creating an Associative Array</code></div>
+    <div class="line number4 index3 alt1"><code class="variable">$name_one</code> <code class="plain">= [</code></div>
+    <div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Zack"</code> <code class="plain">=> </code><code class="string">"Zara"</code><code class="plain">,</code></div>
+    <div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Anthony"</code> <code class="plain">=> </code><code class="string">"Any"</code><code class="plain">,</code></div>
+    <div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Ram"</code> <code class="plain">=> </code><code class="string">"Rani"</code><code class="plain">,</code></div>
+    <div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Salim"</code> <code class="plain">=> </code><code class="string">"Sara"</code><code class="plain">,</code></div>
+    <div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Raghav"</code> <code class="plain">=> </code><code class="string">"Ravina"</code><code class="plain">,</code></div>
+    <div class="line number10 index9 alt1"><code class="plain">];</code></div>
+    <div class="line number11 index10 alt2">&nbsp;</div>
+    <div class="line number12 index11 alt1"><code class="comments">// Looping through an array using foreach</code></div>
+    <div class="line number13 index12 alt2"><code class="functions">echo</code> <code class="string">"Looping using foreach: \n"</code><code class="plain">;</code></div>
+    <div class="line number14 index13 alt1"><code class="keyword">foreach</code> <code class="plain">(</code><code class="variable">$name_one</code> <code class="keyword">as</code> <code class="variable">$val</code> <code class="plain">=> </code><code class="variable">$val_value</code><code class="plain">) {</code></div>
+    <div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="string">"Husband is "</code> <code class="plain">. </code><code class="variable">$val</code> <code class="plain">. </code><code class="string">" and Wife is "</code> <code class="plain">. </code><code class="variable">$val_value</code> <code class="plain">. </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number16 index15 alt1"><code class="plain">}</code></div>
+    <div class="line number17 index16 alt2">&nbsp;</div>
+    <div class="line number18 index17 alt1"><code class="comments">// Looping through an array using for</code></div>
+    <div class="line number19 index18 alt2"><code class="functions">echo</code> <code class="string">"\nLooping using for: \n"</code><code class="plain">;</code></div>
+    <div class="line number20 index19 alt1"><code class="variable">$keys</code> <code class="plain">= </code><code class="functions">array_keys</code><code class="plain">(</code><code class="variable">$name_one</code><code class="plain">);</code></div>
+    <div class="line number21 index20 alt2"><code class="variable">$round</code> <code class="plain">= </code><code class="functions">count</code><code class="plain">(</code><code class="variable">$name_one</code><code class="plain">);</code></div>
+    <div class="line number22 index21 alt1">&nbsp;</div>
+    <div class="line number23 index22 alt2"><code class="keyword">for</code> <code class="plain">(</code><code class="variable">$i</code> <code class="plain">= 0; </code><code class="variable">$i</code> <code class="plain">&lt; </code><code class="variable">$round</code><code class="plain">; ++</code><code class="variable">$i</code><code class="plain">) {</code></div>
+    <div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="variable">$keys</code><code class="plain">[</code><code class="variable">$i</code><code class="plain">] . </code><code class="string">" "</code> <code class="plain">. </code><code class="variable">$name_one</code><code class="plain">[</code><code class="variable">$keys</code><code class="plain">[</code><code class="variable">$i</code><code class="plain">]] . </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number25 index24 alt2"><code class="plain">}</code></div>
+    <div class="line number26 index25 alt1"><code class="plain">?></code></div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div></div>
+    <div class="code-editor-container"></div>
+    </p></div>
+    <div class="code-output-container">
+    <div class = "output-block">
+                            <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+    <pre class="output-pre"></pre>
+    </p></div>
+    <div class = "ide-link-div">
+                            <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+    <pre id="ide-url"></pre>
+    </p></div>
+    </p></div>
+    </div></div>
+    <p dir="ltr"><b><strong>Output:&nbsp;</strong></b></p>
+    <pre><span>Looping using foreach: 
+    Husband is Zack and Wife is Zara
+    Husband is Anthony and Wife is Any
+    Husband is Ram and Wife is Rani
+    Husband is Salim and Wife is Sara
+    Husband is Raghav and Wife is Ravina
+    Looping using for: 
+    zack zara
+    anthony any
+    ram rani
+    salim sara
+    raghav ravina
+    
+    </span></pre>
+    <blockquote>
+    <p dir="ltr"><b><strong>Traversing Associative Arrays</strong></b><span>: We can loop through the associative array in two ways. First by using for loop and secondly by using foreach. You can refer to </span><a href="https://www.geeksforgeeks.org/php-loops/"><span>PHP Loops</span></a><span> for the syntax and basic use.&nbsp;</span></p>
+    </blockquote>
+    <h2 id="multidimensional-arrays"><b><strong>Multidimensional Arrays</strong></b></h2>
+    <p dir="ltr"><span>Multi-dimensional arrays are such arrays that store another array at each index instead of a single element. In other words, we can define multi-dimensional arrays as an array of arrays. As the name suggests, every element in this array can be an array and they can also hold other sub-arrays within. Arrays or sub-arrays in multidimensional arrays can be accessed using multiple dimensions.</span></p>
+    <h3><b><strong>Examples of Multidimensional Arrays</strong></b></h3>
+    <p dir="ltr"><b><strong>Example 1:&nbsp;&nbsp;</strong></b></p>
+    <div class="responsive-tabs">
+    <h2 class="tabtitle">PHP</h2>
+    <div class="tabcontent">
+    
+    <div class="code-block">
+    <div class="code-gutter">
+    <div class="editor-buttons-container">
+    <div class="editor-buttons">
+    <div class="editor-buttons-div" title="Run and Edit">
+                                        <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+    <div  id = "run-and-edit-loader" class="ring-load"></div>
+    <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                        <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+    <div id = "run-code-loader" class="ring-load"></div>
+    <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+    <div  id = "generate-url-loader" class="ring-load"></div>
+    <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                        <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                        <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                    </div>
+    </p></div>
+    </p></div>
+    </p></div>
+    <div class= "code-container">
+    <div id="highlighter_156414" class="syntaxhighlighter nogutter  ">
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+    <td class="code">
+    <div class="container">
+    <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+    <div class="line number2 index1 alt1">&nbsp;</div>
+    <div class="line number3 index2 alt2"><code class="comments">// Defining a multidimensional array</code></div>
+    <div class="line number4 index3 alt1"><code class="variable">$favorites</code> <code class="plain">= </code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"name"</code> <code class="plain">=> </code><code class="string">"Dave Punk"</code><code class="plain">,</code></div>
+    <div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"5689741523"</code><code class="plain">,</code></div>
+    <div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"davepunk@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">),</code></div>
+    <div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"name"</code> <code class="plain">=> </code><code class="string">"Monty Smith"</code><code class="plain">,</code></div>
+    <div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"2584369721"</code><code class="plain">,</code></div>
+    <div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"montysmith@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">),</code></div>
+    <div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"name"</code> <code class="plain">=> </code><code class="string">"John Flinch"</code><code class="plain">,</code></div>
+    <div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"9875147536"</code><code class="plain">,</code></div>
+    <div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"johnflinch@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number19 index18 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">)</code></div>
+    <div class="line number20 index19 alt1"><code class="plain">);</code></div>
+    <div class="line number21 index20 alt2">&nbsp;</div>
+    <div class="line number22 index21 alt1"><code class="comments">// Accessing elements</code></div>
+    <div class="line number23 index22 alt2"><code class="functions">echo</code> <code class="string">"Dave Punk email-id is: "</code> <code class="plain">. </code><code class="variable">$favorites</code><code class="plain">[0][</code><code class="string">"email"</code><code class="plain">], </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number24 index23 alt1"><code class="functions">echo</code> <code class="string">"John Flinch mobile number is: "</code> <code class="plain">. </code><code class="variable">$favorites</code><code class="plain">[2][</code><code class="string">"mob"</code><code class="plain">];</code></div>
+    <div class="line number25 index24 alt2">&nbsp;</div>
+    <div class="line number26 index25 alt1"><code class="plain">?></code></div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div></div>
+    <div class="code-editor-container"></div>
+    </p></div>
+    <div class="code-output-container">
+    <div class = "output-block">
+                            <i id="output-icon" title="Output" class="gfg-icon gfg-icon_arrow-right-editor padding-2px code-sidebar-button output-icon"></i></p>
+    <pre class="output-pre"></pre>
+    </p></div>
+    <div class = "ide-link-div">
+                            <i id="copy-url-button" title="Copy Generated Ide URL" class="gfg-icon gfg-icon_copy padding-2px code-sidebar-button copy-url-button"></i></p>
+    <pre id="ide-url"></pre>
+    </p></div>
+    </p></div>
+    </div></div>
+    <p dir="ltr"><b><strong>Output:&nbsp;</strong></b></p>
+    <pre><span>Dave Punk email-id is: davepunk@gmail.com
+    John Flinch mobile number is: 9875147536
+    
+    </span></pre>
+    <p dir="ltr"><b><strong>Example 2:&nbsp;</strong></b><span>&nbsp;We can traverse through the multidimensional array using for and foreach loop in a nested way.</span></p>
+    <div class="responsive-tabs">
+    <h2 class="tabtitle">PHP</h2>
+    <div class="tabcontent">
+    
+    <div class="code-block">
+    <div class="code-gutter">
+    <div class="editor-buttons-container">
+    <div class="editor-buttons">
+    <div class="editor-buttons-div" title="Run and Edit">
+                                        <i id="copy-code-button" title="Copy Code" class="gfg-icon gfg-icon_copy code-sidebar-button padding-2px copy-code-button"></i></p>
+    <div  id = "run-and-edit-loader" class="ring-load"></div>
+    <p>                                    <i id="run-and-edit-button" title="Edit Code" lang="php"  class="gfg-icon gfg-icon_edit_1 padding-2px code-sidebar-button"></i><br />
+                                        <i id="close-code-editor-button" title="Close Editor" class="gfg-icon gfg-icon_close-editor padding-2px code-sidebar-button close-code-editor-button"></i></p>
+    <div id = "run-code-loader" class="ring-load"></div>
+    <p>                                    <i id="run-code-button" lang="php" title="Run Code and See Output" class="gfg-icon gfg-icon_play padding-2px code-sidebar-button"></i></p>
+    <div  id = "generate-url-loader" class="ring-load"></div>
+    <p>                                    <i id="generate-url-and-run-button" title="Run Code and Generate IDE URL" lang="php"  class="gfg-icon gfg-icon_link padding-2px code-sidebar-button generate-url-and-run-button"></i><br />
+                                        <i title="Dark Mode" class="gfg-icon gfg-icon_dark-toggle padding-2px code-sidebar-button dark-editor-button"></i><br />
+                                        <i id = "edit-on-ide-button" title="Edit on IDE"  lang="php" class="gfg-icon gfg-icon_code padding-2px code-sidebar-button edit-on-ide-button"></i>
+                                    </div>
+    </p></div>
+    </p></div>
+    </p></div>
+    <div class= "code-container">
+    <div id="highlighter_127473" class="syntaxhighlighter nogutter  ">
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+    <td class="code">
+    <div class="container">
+    <div class="line number1 index0 alt2"><code class="plain">&lt;?php</code></div>
+    <div class="line number2 index1 alt1"><code class="comments">// Defining a multidimensional array</code></div>
+    <div class="line number3 index2 alt2"><code class="variable">$favorites</code> <code class="plain">= </code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number4 index3 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Dave Punk"</code> <code class="plain">=> </code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number5 index4 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"5689741523"</code><code class="plain">,</code></div>
+    <div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"davepunk@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">),</code></div>
+    <div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"Dave Punk"</code> <code class="plain">=> </code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"2584369721"</code><code class="plain">,</code></div>
+    <div class="line number10 index9 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"montysmith@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">),</code></div>
+    <div class="line number12 index11 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"John Flinch"</code> <code class="plain">=> </code><code class="keyword">array</code><code class="plain">(</code></div>
+    <div class="line number13 index12 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"mob"</code> <code class="plain">=> </code><code class="string">"9875147536"</code><code class="plain">,</code></div>
+    <div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="string">"email"</code> <code class="plain">=> </code><code class="string">"johnflinch@gmail.com"</code><code class="plain">,</code></div>
+    <div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">)</code></div>
+    <div class="line number16 index15 alt1"><code class="plain">);</code></div>
+    <div class="line number17 index16 alt2">&nbsp;</div>
+    <div class="line number18 index17 alt1"><code class="comments">// Using for and foreach in nested form</code></div>
+    <div class="line number19 index18 alt2"><code class="variable">$keys</code> <code class="plain">= </code><code class="functions">array_keys</code><code class="plain">(</code><code class="variable">$favorites</code><code class="plain">);</code></div>
+    <div class="line number20 index19 alt1"><code class="keyword">for</code><code class="plain">(</code><code class="variable">$i</code> <code class="plain">= 0; </code><code class="variable">$i</code> <code class="plain">&lt; </code><code class="functions">count</code><code class="plain">(</code><code class="variable">$favorites</code><code class="plain">); </code><code class="variable">$i</code><code class="plain">++) {</code></div>
+    <div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="variable">$keys</code><code class="plain">[</code><code class="variable">$i</code><code class="plain">] . </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">foreach</code><code class="plain">(</code><code class="variable">$favorites</code><code class="plain">[</code><code class="variable">$keys</code><code class="plain">[</code><code class="variable">$i</code><code class="plain">]] </code><code class="keyword">as</code> <code class="variable">$key</code> <code class="plain">=> </code><code class="variable">$value</code><code class="plain">) {</code></div>
+    <div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="variable">$key</code> <code class="plain">. </code><code class="string">" : "</code> <code class="plain">. </code><code class="variable">$value</code> <code class="plain">. </code><code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+    <div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions">echo</code> <code class="string">"\n"</code><code class="plain">;</code></div>
+    <div class="line number26 index25 alt1"><code class="plain">}</code></div>
+    <div class="line number27 index26 alt2">&nbsp;</div>
+    <div class="line number28 index27 alt1"><code class="plain">?></code></div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div></div>
     </section>
-    <section id="Structure">
-        <h2>Structures & Unions</h2>
-        <p>
-        <h3>Structures</h3>
-        <p>We have already learnt in the previous tutorials that variables store one piece of information and arrays of
-            certain data types store the information of the same data type. Variables and arrays can handle a great
-            variety of situations. But quite often, we have to deal with the collection of dissimilar data types. For
-            dealing with cases where there is a requirement to store dissimilar data types, C provides a data type
-            called ‘structure’. It is a way to group together information belonging to different data types and combine
-            them into one structure.</p>
-        <h4>What are Structures in C?</h4>
-        Structures are usually used when we wish to store data of different data types together. For example, if we want
-        to store information about a book, there could be a number of parameters defining a book.
-        Books have a title, an author name, the number of pages, and a price. All of the book attributes belong to
-        different data types. The titles and author names must be strings, but the prices and number of pages must be
-        numerical.
-        One way to store the data is to construct individual arrays, and another method is to use a structure variable.
-        It is to keep in mind that structure elements are always stored in contiguous memory locations.
-        <h4>Creating a struct element</h4>
-        <code><br>
-            #include <stdio.h> <br>
-            struct Books <br>
-            {
-                char title[20]; <br>
-                char author[100]; <br>
-                float price; <br>
-                int pages; <br>
-            }; <br>
-            int main() <br>
-            {
-                struct Books book1; <br>
-                return 0; <br>
-            }</code>
-        <h3>Unions</h3>
-        Just like Structures, the union is a user-defined data type. All the members in unions share the same memory
-        location. The union is a data type that allows different data belonging to different data types to be stored in
-        the same memory locations. One of the advantages of using a union is that it provides an efficient way of
-        reusing the memory location, as only one of its members can be accessed at a time. A union is used in the same
-        way we declare and use a structure. The difference lies just in the way memory is allocated to their members
-       <h4>Defining a Union</h4>
-    <code>
-        #include [stdio.h] <br>
-            union Books <br>
-            {
-                char title[20]; <br>
-                char author[100]; <br>
-                float price; <br>
-                int pages; <br>
-            };   <br> 
-            int main() <br>
-            {
-                union Books book1; <br>
-                return 0; <br>
-            }
-            
-    </code> </p>
-
+</div>
     <!-- Add more sections with content -->
 
     <footer>
-        <p>&copy; 2024 C Programming Tutorial</p>
+        <p>&copy; 2024 PHP Programming Tutorial</p>
     </footer>
+
 </body>
 
 </html>

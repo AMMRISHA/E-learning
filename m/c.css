@@ -1,11 +1,43 @@
 body {
-    font-family: 'Arial', sans-serif;
+    
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
+:root {
+    --font-primary: 'Source Sans 3', sans-serif;
+    --font-secondary: 'Nunito', sans-serif;
 
+}
+.body-section{
+    width: 80%;
+    margin: auto;
+    
+}
+
+p{
+    text-wrap: wrap;
+}
+pre{
+    background-color: whitesmoke;
+    width: 80%;
+    min-height: 100px;
+    height: auto;
+}
+.c1{
+    color: green;
+}
+.nv{
+    color: #ff7200;
+}
+.bold{
+    font-weight: bold;
+}
+.mi{
+    color: #006699;
+
+}
 header {
     background-color: #4CAF50;
     color: #fff;
